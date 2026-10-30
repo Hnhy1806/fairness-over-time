@@ -1,0 +1,16 @@
+# Raw data: large, and can be re-downloaded with folktables
+data/raw/
+
+# Python cache
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Secrets (in case you ever add API keys)
+.env
