@@ -1,7 +1,7 @@
 # Fairness Over Time
 
 Does a model that is fair when deployed stay fair as data changes over time?
-Using Folktables ACSIncome (California, 2014–2018), I train models on 2014,
+Using Folktables ACSIncome (Texas, 2014–2018), I train models on 2014,
 monitor accuracy and fairness through 2018, diagnose why fairness changes,
 and compare maintenance strategies.
 
