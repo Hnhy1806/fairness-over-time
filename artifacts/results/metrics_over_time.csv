@@ -1,0 +1,373 @@
+year,model,mitigated,attribute,group,metric,value
+2014,LR,False,overall,all,accuracy,0.8210799748110831
+2014,LR,False,overall,all,auc,0.8877162222959205
+2014,LR,False,sex,Female,Count,11834.0
+2014,LR,False,sex,Male,Count,13574.0
+2014,LR,False,sex,Female,Selection_rate,0.16959607909413554
+2014,LR,False,sex,Male,Selection_rate,0.38986297333136877
+2014,LR,False,sex,Female,TPR,0.5216907675194661
+2014,LR,False,sex,Male,TPR,0.7467240733807563
+2014,LR,False,sex,Female,FPR,0.06566706796541534
+2014,LR,False,sex,Male,FPR,0.15828474246841595
+2014,LR,False,sex,Female,Accuracy,0.8402906878485719
+2014,LR,False,sex,Male,Accuracy,0.804331810814793
+2014,LR,False,sex,(gap),DPD,0.22026689423723322
+2014,LR,False,sex,(gap),EOD,0.22503330586129022
+2014,LR,False,race_eth,Hispanic,Count,7852.0
+2014,LR,False,race_eth,NH Asian,Count,1089.0
+2014,LR,False,race_eth,NH Black,Count,2422.0
+2014,LR,False,race_eth,NH Other,Count,445.0
+2014,LR,False,race_eth,NH White,Count,13600.0
+2014,LR,False,race_eth,Hispanic,Selection_rate,0.11704024452368823
+2014,LR,False,race_eth,NH Asian,Selection_rate,0.4086317722681359
+2014,LR,False,race_eth,NH Black,Selection_rate,0.16019818331957061
+2014,LR,False,race_eth,NH Other,Selection_rate,0.24269662921348314
+2014,LR,False,race_eth,NH White,Selection_rate,0.39992647058823527
+2014,LR,False,race_eth,Hispanic,TPR,0.4680210684725357
+2014,LR,False,race_eth,NH Asian,TPR,0.7708779443254818
+2014,LR,False,race_eth,NH Black,TPR,0.4764595103578154
+2014,LR,False,race_eth,NH Other,TPR,0.6048387096774194
+2014,LR,False,race_eth,NH White,TPR,0.731209735146743
+2014,LR,False,race_eth,Hispanic,FPR,0.045531197301854974
+2014,LR,False,race_eth,NH Asian,FPR,0.13665594855305466
+2014,LR,False,race_eth,NH Black,FPR,0.07139079851930195
+2014,LR,False,race_eth,NH Other,FPR,0.102803738317757
+2014,LR,False,race_eth,NH White,FPR,0.16887169246130804
+2014,LR,False,race_eth,Hispanic,Accuracy,0.8721344880285278
+2014,LR,False,race_eth,NH Asian,Accuracy,0.8236914600550964
+2014,LR,False,race_eth,NH Black,Accuracy,0.8294797687861272
+2014,LR,False,race_eth,NH Other,Accuracy,0.8157303370786517
+2014,LR,False,race_eth,NH White,Accuracy,0.7900735294117647
+2014,LR,False,race_eth,(gap),DPD,0.2915915277444477
+2014,LR,False,race_eth,(gap),EOD,0.30285687585294613
+2014,LR,False,race_eth_x_sex,Hispanic × Female,Count,3505.0
+2014,LR,False,race_eth_x_sex,Hispanic × Male,Count,4347.0
+2014,LR,False,race_eth_x_sex,NH Asian × Female,Count,509.0
+2014,LR,False,race_eth_x_sex,NH Asian × Male,Count,580.0
+2014,LR,False,race_eth_x_sex,NH Black × Female,Count,1293.0
+2014,LR,False,race_eth_x_sex,NH Black × Male,Count,1129.0
+2014,LR,False,race_eth_x_sex,NH Other × Female,Count,210.0
+2014,LR,False,race_eth_x_sex,NH Other × Male,Count,235.0
+2014,LR,False,race_eth_x_sex,NH White × Female,Count,6317.0
+2014,LR,False,race_eth_x_sex,NH White × Male,Count,7283.0
+2014,LR,False,race_eth_x_sex,Hispanic × Female,Selection_rate,0.05306704707560628
+2014,LR,False,race_eth_x_sex,Hispanic × Male,Selection_rate,0.16862203818725557
+2014,LR,False,race_eth_x_sex,NH Asian × Female,Selection_rate,0.27897838899803534
+2014,LR,False,race_eth_x_sex,NH Asian × Male,Selection_rate,0.5224137931034483
+2014,LR,False,race_eth_x_sex,NH Black × Female,Selection_rate,0.10904872389791183
+2014,LR,False,race_eth_x_sex,NH Black × Male,Selection_rate,0.2187776793622675
+2014,LR,False,race_eth_x_sex,NH Other × Female,Selection_rate,0.14285714285714285
+2014,LR,False,race_eth_x_sex,NH Other × Male,Selection_rate,0.33191489361702126
+2014,LR,False,race_eth_x_sex,NH White × Female,Selection_rate,0.2387209118252335
+2014,LR,False,race_eth_x_sex,NH White × Male,Selection_rate,0.5397501029795414
+2014,LR,False,race_eth_x_sex,Hispanic × Female,TPR,0.32338308457711445
+2014,LR,False,race_eth_x_sex,Hispanic × Male,TPR,0.5307443365695793
+2014,LR,False,race_eth_x_sex,NH Asian × Female,TPR,0.6480446927374302
+2014,LR,False,race_eth_x_sex,NH Asian × Male,TPR,0.8472222222222222
+2014,LR,False,race_eth_x_sex,NH Black × Female,TPR,0.3925619834710744
+2014,LR,False,race_eth_x_sex,NH Black × Male,TPR,0.5467128027681661
+2014,LR,False,race_eth_x_sex,NH Other × Female,TPR,0.4418604651162791
+2014,LR,False,race_eth_x_sex,NH Other × Male,TPR,0.691358024691358
+2014,LR,False,race_eth_x_sex,NH White × Female,TPR,0.571818678317859
+2014,LR,False,race_eth_x_sex,NH White × Male,TPR,0.8088900718658504
+2014,LR,False,race_eth_x_sex,Hispanic × Female,FPR,0.018047051240734774
+2014,LR,False,race_eth_x_sex,Hispanic × Male,FPR,0.07046783625730994
+2014,LR,False,race_eth_x_sex,NH Asian × Female,FPR,0.07878787878787878
+2014,LR,False,race_eth_x_sex,NH Asian × Male,FPR,0.20205479452054795
+2014,LR,False,race_eth_x_sex,NH Black × Female,FPR,0.04376784015223597
+2014,LR,False,race_eth_x_sex,NH Black × Male,FPR,0.10595238095238095
+2014,LR,False,race_eth_x_sex,NH Other × Female,FPR,0.0658682634730539
+2014,LR,False,race_eth_x_sex,NH Other × Male,FPR,0.14285714285714285
+2014,LR,False,race_eth_x_sex,NH White × Female,FPR,0.10276415514935354
+2014,LR,False,race_eth_x_sex,NH White × Male,FPR,0.25297787861599547
+2014,LR,False,race_eth_x_sex,Hispanic × Female,Accuracy,0.9064194008559201
+2014,LR,False,race_eth_x_sex,Hispanic × Male,Accuracy,0.8444904531861054
+2014,LR,False,race_eth_x_sex,NH Asian × Female,Accuracy,0.825147347740668
+2014,LR,False,race_eth_x_sex,NH Asian × Male,Accuracy,0.8224137931034483
+2014,LR,False,race_eth_x_sex,NH Black × Female,Accuracy,0.8507347254447022
+2014,LR,False,race_eth_x_sex,NH Black × Male,Accuracy,0.8051372896368467
+2014,LR,False,race_eth_x_sex,NH Other × Female,Accuracy,0.8333333333333334
+2014,LR,False,race_eth_x_sex,NH Other × Male,Accuracy,0.8
+2014,LR,False,race_eth_x_sex,NH White × Female,Accuracy,0.8029127750514484
+2014,LR,False,race_eth_x_sex,NH White × Male,Accuracy,0.778937251132775
+2014,LR,False,race_eth_x_sex,(gap),DPD,0.4866830559039351
+2014,LR,False,race_eth_x_sex,(gap),EOD,0.5238391376451077
+2014,LR,True,overall,all,accuracy,0.8100204659949622
+2014,LR,True,overall,all,auc,0.8062070255681342
+2014,LR,True,sex,Female,Count,11834.0
+2014,LR,True,sex,Male,Count,13574.0
+2014,LR,True,sex,Female,Selection_rate,0.22562109176947778
+2014,LR,True,sex,Male,Selection_rate,0.3268012376602328
+2014,LR,True,sex,Female,TPR,0.6370040786058584
+2014,LR,True,sex,Male,TPR,0.6441407712467241
+2014,LR,True,sex,Female,FPR,0.10419174783845901
+2014,LR,True,sex,Male,FPR,0.12086977648202138
+2014,LR,True,sex,Female,Accuracy,0.8368260943045462
+2014,LR,True,sex,Male,Accuracy,0.7866509503462502
+2014,LR,True,sex,(gap),DPD,0.101180145890755
+2014,LR,True,sex,(gap),EOD,0.016678028643562368
+2014,LR,True,race_eth,Hispanic,Count,7852.0
+2014,LR,True,race_eth,NH Asian,Count,1089.0
+2014,LR,True,race_eth,NH Black,Count,2422.0
+2014,LR,True,race_eth,NH Other,Count,445.0
+2014,LR,True,race_eth,NH White,Count,13600.0
+2014,LR,True,race_eth,Hispanic,Selection_rate,0.16505348955680083
+2014,LR,True,race_eth,NH Asian,Selection_rate,0.3480257116620753
+2014,LR,True,race_eth,NH Black,Selection_rate,0.24318744838976053
+2014,LR,True,race_eth,NH Other,Selection_rate,0.27191011235955054
+2014,LR,True,race_eth,NH White,Selection_rate,0.34713235294117645
+2014,LR,True,race_eth,Hispanic,TPR,0.5854025583145221
+2014,LR,True,race_eth,NH Asian,TPR,0.6852248394004282
+2014,LR,True,race_eth,NH Black,TPR,0.6308851224105462
+2014,LR,True,race_eth,NH Other,TPR,0.6693548387096774
+2014,LR,True,race_eth,NH White,TPR,0.651932712956335
+2014,LR,True,race_eth,Hispanic,FPR,0.07941131381266288
+2014,LR,True,race_eth,NH Asian,FPR,0.09485530546623794
+2014,LR,True,race_eth,NH Black,FPR,0.1343204653622422
+2014,LR,True,race_eth,NH Other,FPR,0.11838006230529595
+2014,LR,True,race_eth,NH White,FPR,0.1345481777333999
+2014,LR,True,race_eth,Hispanic,Accuracy,0.8638563423331636
+2014,LR,True,race_eth,NH Asian,Accuracy,0.8108356290174472
+2014,LR,True,race_eth,NH Black,Accuracy,0.8142031379025598
+2014,LR,True,race_eth,NH Other,Accuracy,0.8224719101123595
+2014,LR,True,race_eth,NH White,Accuracy,0.7777205882352941
+2014,LR,True,race_eth,(gap),DPD,0.18297222210527447
+2014,LR,True,race_eth,(gap),EOD,0.09982228108590607
+2014,LR,True,race_eth_x_sex,Hispanic × Female,Count,3505.0
+2014,LR,True,race_eth_x_sex,Hispanic × Male,Count,4347.0
+2014,LR,True,race_eth_x_sex,NH Asian × Female,Count,509.0
+2014,LR,True,race_eth_x_sex,NH Asian × Male,Count,580.0
+2014,LR,True,race_eth_x_sex,NH Black × Female,Count,1293.0
+2014,LR,True,race_eth_x_sex,NH Black × Male,Count,1129.0
+2014,LR,True,race_eth_x_sex,NH Other × Female,Count,210.0
+2014,LR,True,race_eth_x_sex,NH Other × Male,Count,235.0
+2014,LR,True,race_eth_x_sex,NH White × Female,Count,6317.0
+2014,LR,True,race_eth_x_sex,NH White × Male,Count,7283.0
+2014,LR,True,race_eth_x_sex,Hispanic × Female,Selection_rate,0.13067047075606278
+2014,LR,True,race_eth_x_sex,Hispanic × Male,Selection_rate,0.19277662755923625
+2014,LR,True,race_eth_x_sex,NH Asian × Female,Selection_rate,0.2770137524557957
+2014,LR,True,race_eth_x_sex,NH Asian × Male,Selection_rate,0.4103448275862069
+2014,LR,True,race_eth_x_sex,NH Black × Female,Selection_rate,0.24052590873936583
+2014,LR,True,race_eth_x_sex,NH Black × Male,Selection_rate,0.2462356067316209
+2014,LR,True,race_eth_x_sex,NH Other × Female,Selection_rate,0.23333333333333334
+2014,LR,True,race_eth_x_sex,NH Other × Male,Selection_rate,0.30638297872340425
+2014,LR,True,race_eth_x_sex,NH White × Female,Selection_rate,0.27085641918632264
+2014,LR,True,race_eth_x_sex,NH White × Male,Selection_rate,0.4132912261430729
+2014,LR,True,race_eth_x_sex,Hispanic × Female,TPR,0.6218905472636815
+2014,LR,True,race_eth_x_sex,Hispanic × Male,TPR,0.56957928802589
+2014,LR,True,race_eth_x_sex,NH Asian × Female,TPR,0.6536312849162011
+2014,LR,True,race_eth_x_sex,NH Asian × Male,TPR,0.7048611111111112
+2014,LR,True,race_eth_x_sex,NH Black × Female,TPR,0.6735537190082644
+2014,LR,True,race_eth_x_sex,NH Black × Male,TPR,0.5951557093425606
+2014,LR,True,race_eth_x_sex,NH Other × Female,TPR,0.7209302325581395
+2014,LR,True,race_eth_x_sex,NH Other × Male,TPR,0.6419753086419753
+2014,LR,True,race_eth_x_sex,NH White × Female,TPR,0.6318951392681594
+2014,LR,True,race_eth_x_sex,NH White × Male,TPR,0.6616981634282673
+2014,LR,True,race_eth_x_sex,Hispanic × Female,FPR,0.06703190460844344
+2014,LR,True,race_eth_x_sex,Hispanic × Male,FPR,0.09064327485380116
+2014,LR,True,race_eth_x_sex,NH Asian × Female,FPR,0.07272727272727272
+2014,LR,True,race_eth_x_sex,NH Asian × Male,FPR,0.11986301369863013
+2014,LR,True,race_eth_x_sex,NH Black × Female,FPR,0.14081826831588962
+2014,LR,True,race_eth_x_sex,NH Black × Male,FPR,0.1261904761904762
+2014,LR,True,race_eth_x_sex,NH Other × Female,FPR,0.10778443113772455
+2014,LR,True,race_eth_x_sex,NH Other × Male,FPR,0.12987012987012986
+2014,LR,True,race_eth_x_sex,NH White × Female,FPR,0.12349531876950513
+2014,LR,True,race_eth_x_sex,NH White × Male,FPR,0.14861032331253546
+2014,LR,True,race_eth_x_sex,Hispanic × Female,Accuracy,0.8972895863052782
+2014,LR,True,race_eth_x_sex,Hispanic × Male,Accuracy,0.8368990108120543
+2014,LR,True,race_eth_x_sex,NH Asian × Female,Accuracy,0.831041257367387
+2014,LR,True,race_eth_x_sex,NH Asian × Male,Accuracy,0.7931034482758621
+2014,LR,True,race_eth_x_sex,NH Black × Female,Accuracy,0.8244392884764115
+2014,LR,True,race_eth_x_sex,NH Black × Male,Accuracy,0.8024800708591674
+2014,LR,True,race_eth_x_sex,NH Other × Female,Accuracy,0.8571428571428571
+2014,LR,True,race_eth_x_sex,NH Other × Male,Accuracy,0.7914893617021277
+2014,LR,True,race_eth_x_sex,NH White × Female,Accuracy,0.8056039259141998
+2014,LR,True,race_eth_x_sex,NH White × Male,Accuracy,0.7535356309213236
+2014,LR,True,race_eth_x_sex,(gap),DPD,0.28262075538701015
+2014,LR,True,race_eth_x_sex,(gap),EOD,0.1513509445322495
+2014,XGBoost,False,overall,all,accuracy,0.8267474811083123
+2014,XGBoost,False,overall,all,auc,0.8959158569989036
+2014,XGBoost,False,sex,Female,Count,11834.0
+2014,XGBoost,False,sex,Male,Count,13574.0
+2014,XGBoost,False,sex,Female,Selection_rate,0.17390569545377726
+2014,XGBoost,False,sex,Male,Selection_rate,0.3903786650950346
+2014,XGBoost,False,sex,Female,TPR,0.5483870967741935
+2014,XGBoost,False,sex,Male,TPR,0.7521527517783602
+2014,XGBoost,False,sex,Female,FPR,0.0633687205866258
+2014,XGBoost,False,sex,Male,FPR,0.1556122448979592
+2014,XGBoost,False,sex,Female,Accuracy,0.8481494000338009
+2014,XGBoost,False,sex,Male,Accuracy,0.8080889936643584
+2014,XGBoost,False,sex,(gap),DPD,0.21647296964125734
+2014,XGBoost,False,sex,(gap),EOD,0.20376565500416666
+2014,XGBoost,False,race_eth,Hispanic,Count,7852.0
+2014,XGBoost,False,race_eth,NH Asian,Count,1089.0
+2014,XGBoost,False,race_eth,NH Black,Count,2422.0
+2014,XGBoost,False,race_eth,NH Other,Count,445.0
+2014,XGBoost,False,race_eth,NH White,Count,13600.0
+2014,XGBoost,False,race_eth,Hispanic,Selection_rate,0.10596026490066225
+2014,XGBoost,False,race_eth,NH Asian,Selection_rate,0.42699724517906334
+2014,XGBoost,False,race_eth,NH Black,Selection_rate,0.15813377374071017
+2014,XGBoost,False,race_eth,NH Other,Selection_rate,0.24269662921348314
+2014,XGBoost,False,race_eth,NH White,Selection_rate,0.40948529411764706
+2014,XGBoost,False,race_eth,Hispanic,TPR,0.43867569601203915
+2014,XGBoost,False,race_eth,NH Asian,TPR,0.7901498929336188
+2014,XGBoost,False,race_eth,NH Black,TPR,0.5065913370998116
+2014,XGBoost,False,race_eth,NH Other,TPR,0.5645161290322581
+2014,XGBoost,False,race_eth,NH White,TPR,0.7526843235504653
+2014,XGBoost,False,race_eth,Hispanic,FPR,0.03817261996014104
+2014,XGBoost,False,race_eth,NH Asian,FPR,0.15434083601286175
+2014,XGBoost,False,race_eth,NH Black,FPR,0.060285563194077206
+2014,XGBoost,False,race_eth,NH Other,FPR,0.11838006230529595
+2014,XGBoost,False,race_eth,NH White,FPR,0.1701198202695956
+2014,XGBoost,False,race_eth,Hispanic,Accuracy,0.8732806928171166
+2014,XGBoost,False,race_eth,NH Asian,Accuracy,0.8218549127640037
+2014,XGBoost,False,race_eth,NH Black,Accuracy,0.8447563996696945
+2014,XGBoost,False,race_eth,NH Other,Accuracy,0.7932584269662921
+2014,XGBoost,False,race_eth,NH White,Accuracy,0.7981617647058824
+2014,XGBoost,False,race_eth,(gap),DPD,0.3210369802784011
+2014,XGBoost,False,race_eth,(gap),EOD,0.35147419692157966
+2014,XGBoost,False,race_eth_x_sex,Hispanic × Female,Count,3505.0
+2014,XGBoost,False,race_eth_x_sex,Hispanic × Male,Count,4347.0
+2014,XGBoost,False,race_eth_x_sex,NH Asian × Female,Count,509.0
+2014,XGBoost,False,race_eth_x_sex,NH Asian × Male,Count,580.0
+2014,XGBoost,False,race_eth_x_sex,NH Black × Female,Count,1293.0
+2014,XGBoost,False,race_eth_x_sex,NH Black × Male,Count,1129.0
+2014,XGBoost,False,race_eth_x_sex,NH Other × Female,Count,210.0
+2014,XGBoost,False,race_eth_x_sex,NH Other × Male,Count,235.0
+2014,XGBoost,False,race_eth_x_sex,NH White × Female,Count,6317.0
+2014,XGBoost,False,race_eth_x_sex,NH White × Male,Count,7283.0
+2014,XGBoost,False,race_eth_x_sex,Hispanic × Female,Selection_rate,0.05877318116975749
+2014,XGBoost,False,race_eth_x_sex,Hispanic × Male,Selection_rate,0.14400736139866574
+2014,XGBoost,False,race_eth_x_sex,NH Asian × Female,Selection_rate,0.32612966601178783
+2014,XGBoost,False,race_eth_x_sex,NH Asian × Male,Selection_rate,0.5155172413793103
+2014,XGBoost,False,race_eth_x_sex,NH Black × Female,Selection_rate,0.13070378963650425
+2014,XGBoost,False,race_eth_x_sex,NH Black × Male,Selection_rate,0.18954827280779452
+2014,XGBoost,False,race_eth_x_sex,NH Other × Female,Selection_rate,0.15714285714285714
+2014,XGBoost,False,race_eth_x_sex,NH Other × Male,Selection_rate,0.3191489361702128
+2014,XGBoost,False,race_eth_x_sex,NH White × Female,Selection_rate,0.23492164001899635
+2014,XGBoost,False,race_eth_x_sex,NH White × Male,Selection_rate,0.5608952354798846
+2014,XGBoost,False,race_eth_x_sex,Hispanic × Female,TPR,0.3681592039800995
+2014,XGBoost,False,race_eth_x_sex,Hispanic × Male,TPR,0.4692556634304207
+2014,XGBoost,False,race_eth_x_sex,NH Asian × Female,TPR,0.7262569832402235
+2014,XGBoost,False,race_eth_x_sex,NH Asian × Male,TPR,0.8298611111111112
+2014,XGBoost,False,race_eth_x_sex,NH Black × Female,TPR,0.49173553719008267
+2014,XGBoost,False,race_eth_x_sex,NH Black × Male,TPR,0.5190311418685121
+2014,XGBoost,False,race_eth_x_sex,NH Other × Female,TPR,0.46511627906976744
+2014,XGBoost,False,race_eth_x_sex,NH Other × Male,TPR,0.6172839506172839
+2014,XGBoost,False,race_eth_x_sex,NH White × Female,TPR,0.5800109229929
+2014,XGBoost,False,race_eth_x_sex,NH White × Male,TPR,0.8368379025818472
+2014,XGBoost,False,race_eth_x_sex,Hispanic × Female,FPR,0.018691588785046728
+2014,XGBoost,False,race_eth_x_sex,Hispanic × Male,FPR,0.05584795321637427
+2014,XGBoost,False,race_eth_x_sex,NH Asian × Female,FPR,0.10909090909090909
+2014,XGBoost,False,race_eth_x_sex,NH Asian × Male,FPR,0.2054794520547945
+2014,XGBoost,False,race_eth_x_sex,NH Black × Female,FPR,0.047573739295908656
+2014,XGBoost,False,race_eth_x_sex,NH Black × Male,FPR,0.0761904761904762
+2014,XGBoost,False,race_eth_x_sex,NH Other × Female,FPR,0.07784431137724551
+2014,XGBoost,False,race_eth_x_sex,NH Other × Male,FPR,0.16233766233766234
+2014,XGBoost,False,race_eth_x_sex,NH White × Female,FPR,0.09407044137316095
+2014,XGBoost,False,race_eth_x_sex,NH White × Male,FPR,0.26687464549064094
+2014,XGBoost,False,race_eth_x_sex,Hispanic × Female,Accuracy,0.9109843081312411
+2014,XGBoost,False,race_eth_x_sex,Hispanic × Male,Accuracy,0.8428801472279733
+2014,XGBoost,False,race_eth_x_sex,NH Asian × Female,Accuracy,0.8330058939096268
+2014,XGBoost,False,race_eth_x_sex,NH Asian × Male,Accuracy,0.8120689655172414
+2014,XGBoost,False,race_eth_x_sex,NH Black × Female,Accuracy,0.8662026295436969
+2014,XGBoost,False,race_eth_x_sex,NH Black × Male,Accuracy,0.8201948627103631
+2014,XGBoost,False,race_eth_x_sex,NH Other × Female,Accuracy,0.8285714285714286
+2014,XGBoost,False,race_eth_x_sex,NH Other × Male,Accuracy,0.7617021276595745
+2014,XGBoost,False,race_eth_x_sex,NH White × Female,Accuracy,0.811461136615482
+2014,XGBoost,False,race_eth_x_sex,NH White × Male,Accuracy,0.7866263902238089
+2014,XGBoost,False,race_eth_x_sex,(gap),DPD,0.5021220543101271
+2014,XGBoost,False,race_eth_x_sex,(gap),EOD,0.4686786986017477
+2014,XGBoost,True,overall,all,accuracy,0.8135626574307305
+2014,XGBoost,True,overall,all,auc,0.795656496131248
+2014,XGBoost,True,sex,Female,Count,11834.0
+2014,XGBoost,True,sex,Male,Count,13574.0
+2014,XGBoost,True,sex,Female,Selection_rate,0.21311475409836064
+2014,XGBoost,True,sex,Male,Selection_rate,0.32341240607042876
+2014,XGBoost,True,sex,Female,TPR,0.6240266963292548
+2014,XGBoost,True,sex,Male,TPR,0.6409584425308873
+2014,XGBoost,True,sex,Female,FPR,0.09182445003830579
+2014,XGBoost,True,sex,Male,FPR,0.11734693877551021
+2014,XGBoost,True,sex,Female,Accuracy,0.8434172722663512
+2014,XGBoost,True,sex,Male,Accuracy,0.7875349933696774
+2014,XGBoost,True,sex,(gap),DPD,0.11029765197206812
+2014,XGBoost,True,sex,(gap),EOD,0.02552248873720442
+2014,XGBoost,True,race_eth,Hispanic,Count,7852.0
+2014,XGBoost,True,race_eth,NH Asian,Count,1089.0
+2014,XGBoost,True,race_eth,NH Black,Count,2422.0
+2014,XGBoost,True,race_eth,NH Other,Count,445.0
+2014,XGBoost,True,race_eth,NH White,Count,13600.0
+2014,XGBoost,True,race_eth,Hispanic,Selection_rate,0.19103413143148243
+2014,XGBoost,True,race_eth,NH Asian,Selection_rate,0.3204775022956841
+2014,XGBoost,True,race_eth,NH Black,Selection_rate,0.1907514450867052
+2014,XGBoost,True,race_eth,NH Other,Selection_rate,0.25842696629213485
+2014,XGBoost,True,race_eth,NH White,Selection_rate,0.32985294117647057
+2014,XGBoost,True,race_eth,Hispanic,TPR,0.6576373212942062
+2014,XGBoost,True,race_eth,NH Asian,TPR,0.6445396145610278
+2014,XGBoost,True,race_eth,NH Black,TPR,0.5668549905838042
+2014,XGBoost,True,race_eth,NH Other,TPR,0.6129032258064516
+2014,XGBoost,True,race_eth,NH White,TPR,0.636184681460272
+2014,XGBoost,True,race_eth,Hispanic,FPR,0.09596811283151924
+2014,XGBoost,True,race_eth,NH Asian,FPR,0.07717041800643087
+2014,XGBoost,True,race_eth,NH Black,FPR,0.08514013749338974
+2014,XGBoost,True,race_eth,NH Other,FPR,0.12149532710280374
+2014,XGBoost,True,race_eth,NH White,FPR,0.11620069895157265
+2014,XGBoost,True,race_eth,Hispanic,Accuracy,0.8623280692817117
+2014,XGBoost,True,race_eth,NH Asian,Accuracy,0.8034894398530762
+2014,XGBoost,True,race_eth,NH Black,Accuracy,0.8385631709331132
+2014,XGBoost,True,race_eth,NH Other,Accuracy,0.8044943820224719
+2014,XGBoost,True,race_eth,NH White,Accuracy,0.7820588235294118
+2014,XGBoost,True,race_eth,(gap),DPD,0.13910149608976538
+2014,XGBoost,True,race_eth,(gap),EOD,0.09078233071040198
+2014,XGBoost,True,race_eth_x_sex,Hispanic × Female,Count,3505.0
+2014,XGBoost,True,race_eth_x_sex,Hispanic × Male,Count,4347.0
+2014,XGBoost,True,race_eth_x_sex,NH Asian × Female,Count,509.0
+2014,XGBoost,True,race_eth_x_sex,NH Asian × Male,Count,580.0
+2014,XGBoost,True,race_eth_x_sex,NH Black × Female,Count,1293.0
+2014,XGBoost,True,race_eth_x_sex,NH Black × Male,Count,1129.0
+2014,XGBoost,True,race_eth_x_sex,NH Other × Female,Count,210.0
+2014,XGBoost,True,race_eth_x_sex,NH Other × Male,Count,235.0
+2014,XGBoost,True,race_eth_x_sex,NH White × Female,Count,6317.0
+2014,XGBoost,True,race_eth_x_sex,NH White × Male,Count,7283.0
+2014,XGBoost,True,race_eth_x_sex,Hispanic × Female,Selection_rate,0.14379457917261054
+2014,XGBoost,True,race_eth_x_sex,Hispanic × Male,Selection_rate,0.22912353347135955
+2014,XGBoost,True,race_eth_x_sex,NH Asian × Female,Selection_rate,0.24950884086444008
+2014,XGBoost,True,race_eth_x_sex,NH Asian × Male,Selection_rate,0.38275862068965516
+2014,XGBoost,True,race_eth_x_sex,NH Black × Female,Selection_rate,0.18097447795823665
+2014,XGBoost,True,race_eth_x_sex,NH Black × Male,Selection_rate,0.20194862710363154
+2014,XGBoost,True,race_eth_x_sex,NH Other × Female,Selection_rate,0.21428571428571427
+2014,XGBoost,True,race_eth_x_sex,NH Other × Male,Selection_rate,0.2978723404255319
+2014,XGBoost,True,race_eth_x_sex,NH White × Female,Selection_rate,0.2551844229855944
+2014,XGBoost,True,race_eth_x_sex,NH White × Male,Selection_rate,0.39461760263627627
+2014,XGBoost,True,race_eth_x_sex,Hispanic × Female,TPR,0.6965174129353234
+2014,XGBoost,True,race_eth_x_sex,Hispanic × Male,TPR,0.6407766990291263
+2014,XGBoost,True,race_eth_x_sex,NH Asian × Female,TPR,0.5865921787709497
+2014,XGBoost,True,race_eth_x_sex,NH Asian × Male,TPR,0.6805555555555556
+2014,XGBoost,True,race_eth_x_sex,NH Black × Female,TPR,0.6074380165289256
+2014,XGBoost,True,race_eth_x_sex,NH Black × Male,TPR,0.532871972318339
+2014,XGBoost,True,race_eth_x_sex,NH Other × Female,TPR,0.6046511627906976
+2014,XGBoost,True,race_eth_x_sex,NH Other × Male,TPR,0.6172839506172839
+2014,XGBoost,True,race_eth_x_sex,NH White × Female,TPR,0.614418350628072
+2014,XGBoost,True,race_eth_x_sex,NH White × Male,TPR,0.6467926537130689
+2014,XGBoost,True,race_eth_x_sex,Hispanic × Female,FPR,0.0721882049629391
+2014,XGBoost,True,race_eth_x_sex,Hispanic × Male,FPR,0.11754385964912281
+2014,XGBoost,True,race_eth_x_sex,NH Asian × Female,FPR,0.06666666666666667
+2014,XGBoost,True,race_eth_x_sex,NH Asian × Male,FPR,0.08904109589041095
+2014,XGBoost,True,race_eth_x_sex,NH Black × Female,FPR,0.08277830637488107
+2014,XGBoost,True,race_eth_x_sex,NH Black × Male,FPR,0.0880952380952381
+2014,XGBoost,True,race_eth_x_sex,NH Other × Female,FPR,0.11377245508982035
+2014,XGBoost,True,race_eth_x_sex,NH Other × Male,FPR,0.12987012987012986
+2014,XGBoost,True,race_eth_x_sex,NH White × Female,FPR,0.10855996433348195
+2014,XGBoost,True,race_eth_x_sex,NH White × Male,FPR,0.12592172433352242
+2014,XGBoost,True,race_eth_x_sex,Hispanic × Female,Accuracy,0.901283880171184
+2014,XGBoost,True,race_eth_x_sex,Hispanic × Male,Accuracy,0.8309178743961353
+2014,XGBoost,True,race_eth_x_sex,NH Asian × Female,Accuracy,0.8113948919449901
+2014,XGBoost,True,race_eth_x_sex,NH Asian × Male,Accuracy,0.7965517241379311
+2014,XGBoost,True,race_eth_x_sex,NH Black × Female,Accuracy,0.8592420726991493
+2014,XGBoost,True,race_eth_x_sex,NH Black × Male,Accuracy,0.8148804251550045
+2014,XGBoost,True,race_eth_x_sex,NH Other × Female,Accuracy,0.8285714285714286
+2014,XGBoost,True,race_eth_x_sex,NH Other × Male,Accuracy,0.7829787234042553
+2014,XGBoost,True,race_eth_x_sex,NH White × Female,Accuracy,0.811144530631629
+2014,XGBoost,True,race_eth_x_sex,NH White × Male,Accuracy,0.7568309762460524
+2014,XGBoost,True,race_eth_x_sex,(gap),DPD,0.2508230234636657
+2014,XGBoost,True,race_eth_x_sex,(gap),EOD,0.16364544061698438

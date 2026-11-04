@@ -4,7 +4,7 @@ import numpy as np
 from fairlearn.metrics import (
     MetricFrame, count, selection_rate, true_positive_rate, false_positive_rate,
 )
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, roc_auc_score
 
 METRICS = {
     'Count': count,
@@ -135,3 +135,57 @@ def bootstrap_gaps(y_true, y_pred, sensitive, n_boot=200, seed=42):
             })
 
     return pd.DataFrame(rows)
+
+#evaluate
+def evaluate_model(pipe, X, y_true, meta):
+    """Overall accuracy/AUC plus all fairness metrics for one fitted pipeline.
+
+    Returns long format: attribute, group, metric, value.
+    Overall rows have attribute = "overall", group = "all".
+    """
+    y_true = np.asarray(y_true)
+    pred = pipe.predict(X)
+    proba = pipe.predict_proba(X)[:, 1]
+
+    overall = pd.DataFrame({
+        "attribute": "overall",
+        "group": "all",
+        "metric": ["accuracy", "auc"],
+        "value": [accuracy_score(y_true, pred), roc_auc_score(y_true, proba)],
+    })
+    fair = fairness_long(y_true, pred, make_sensitive(meta).reset_index(drop=True))
+    return pd.concat([overall, fair], ignore_index=True)
+
+
+def evaluate_all(models, X, y_true, meta, year, model_info):
+    """Evaluate every model on one dataset and label the rows.
+
+    Returns: year, model, mitigated, attribute, group, metric, value
+    (the metrics_over_time.csv format). Works for any year.
+    """
+    frames = []
+    for name, pipe in models.items():
+        rows = evaluate_model(pipe, X, y_true, meta)
+        rows.insert(0, "mitigated", model_info[name]["mitigated"])
+        rows.insert(0, "model", model_info[name]["model"])
+        rows.insert(0, "year", year)
+        frames.append(rows)
+    return pd.concat(frames, ignore_index=True)
+
+#bootstrap
+def bootstrap_all(models, X, y_true, meta, year, model_info, n_boot=200, seed=42):
+    """Bootstrap CIs for DPD/EOD for every model on one dataset.
+
+    Returns: year, model, mitigated, attribute, metric, value, ci_low, ci_high.
+    """
+    sensitive = make_sensitive(meta)
+    y_true = np.asarray(y_true)
+    frames = []
+    for name, pipe in models.items():
+        pred = pipe.predict(X)
+        ci = bootstrap_gaps(y_true, pred, sensitive, n_boot=n_boot, seed=seed)
+        ci.insert(0, "mitigated", model_info[name]["mitigated"])
+        ci.insert(0, "model", model_info[name]["model"])
+        ci.insert(0, "year", year)
+        frames.append(ci)
+    return pd.concat(frames, ignore_index=True)
