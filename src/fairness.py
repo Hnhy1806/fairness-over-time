@@ -189,3 +189,45 @@ def bootstrap_all(models, X, y_true, meta, year, model_info, n_boot=200, seed=42
         ci.insert(0, "year", year)
         frames.append(ci)
     return pd.concat(frames, ignore_index=True)
+
+#save the result
+from pathlib import Path
+
+
+def save_results(new: pd.DataFrame, path, keys=("year",)) -> pd.DataFrame:
+    """Write results to a CSV, replacing any existing rows with the same keys.
+
+    Rerunning the same year replaces that year's rows instead of adding
+    duplicates. With keys=("year", "model", "mitigated"), only the models in
+    `new` are replaced.
+    """
+    path = Path(path)
+    keys = list(keys)
+
+    if path.exists():
+        old = pd.read_csv(path)
+
+        if set(old.columns) != set(new.columns):
+            raise ValueError(
+                f"Column mismatch with {path.name}: "
+                f"file has {sorted(old.columns)}, new has {sorted(new.columns)}"
+            )
+
+        # Rows in `old` whose key combination appears in `new` get removed
+        new_keys = new[keys].drop_duplicates()
+        merged = old.merge(new_keys, on=keys, how="left", indicator=True)
+        kept = old[(merged["_merge"] == "left_only").to_numpy()]
+
+        out = pd.concat([kept, new[old.columns]], ignore_index=True)
+    else:
+        out = new.copy()
+
+    sort_cols = [c for c in ["year", "model", "mitigated", "attribute", "group", "metric"]
+             if c in out.columns]
+    
+    out = out.sort_values(sort_cols, kind="stable").reset_index(drop=True)
+    
+    path.parent.mkdir(parents=True, exist_ok=True)
+    out.to_csv(path, index=False)
+    return out
+

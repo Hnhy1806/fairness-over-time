@@ -16,14 +16,14 @@ def make_race_eth(df):
     Works on a DataFrame of any length (1 row for the app, many for analysis).
     """
     conditions = [
-        df['HISP'] != 1, # TODO: Hispanic condition
-        df['RAC1P'] == 1, # TODO: NH White condition
-        df['RAC1P'] == 2, # TODO: NH Black condition
-        df['RAC1P'] == 6, # TODO: NH Asian condition
+        df['HISP'] != 1, # Hispanic condition
+        df['RAC1P'] == 1, # NH White condition
+        df['RAC1P'] == 2, # NH Black condition
+        df['RAC1P'] == 6, # NH Asian condition
     ]
-    labels = ['Hispanic', 'NH White', 'NH Black', 'NH Asian']   # TODO: the four labels, in the same order
+    labels = ['Hispanic', 'NH White', 'NH Black', 'NH Asian']
     return pd.Series(
-        np.select(conditions, labels, default='NH Other'),   # TODO
+        np.select(conditions, labels, default='NH Other'),
         index=df.index,
         name="race_eth",
     )
@@ -46,12 +46,12 @@ def load_acs(year, state="TX"):
     X, y, _ = ACSIncome.df_to_pandas(raw)
     
     filtered = acs.adult_filter(raw).reset_index(drop=True)
-    assert (filtered[X.columns].to_numpy() == X.to_numpy()).all(), "raw and X are not aligned"
+    assert (filtered[X.columns].to_numpy() == X.to_numpy()).all()
     
     meta = pd.DataFrame({
-        "race_eth": make_race_eth(filtered),    # TODO: your new function
+        "race_eth": make_race_eth(filtered),
         "SEX": filtered['SEX'],
-        "income": filtered['PINCP'],      # dollar amount from the filtered data
+        "income": filtered['PINCP'],
         "ADJINC": filtered['ADJINC'],
         "PWGTP": filtered['PWGTP'],
     })
