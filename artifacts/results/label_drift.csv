@@ -1,0 +1,65 @@
+year,attribute,group,metric,value
+2014,overall,all,fixed_rate,0.3163516715339384
+2014,overall,all,indexed_rate,0.3163516715339384
+2014,race_eth,Hispanic,fixed_rate,0.16915435557819664
+2014,race_eth,Hispanic,indexed_rate,0.16915435557819664
+2014,race_eth,NH Asian,fixed_rate,0.4287026828371922
+2014,race_eth,NH Asian,indexed_rate,0.4287026828371922
+2014,race_eth,NH Black,fixed_rate,0.2189720707321104
+2014,race_eth,NH Black,indexed_rate,0.2189720707321104
+2014,race_eth,NH Other,fixed_rate,0.279319606087735
+2014,race_eth,NH Other,indexed_rate,0.279319606087735
+2014,race_eth,NH White,fixed_rate,0.4108910163085837
+2014,race_eth,NH White,indexed_rate,0.4108910163085837
+2014,sex,Female,fixed_rate,0.22787505915759584
+2014,sex,Female,indexed_rate,0.22787505915759584
+2014,sex,Male,fixed_rate,0.39347329650092083
+2014,sex,Male,indexed_rate,0.39347329650092083
+2015,overall,all,fixed_rate,0.3316455892501299
+2015,overall,all,indexed_rate,0.33132768339678526
+2015,race_eth,Hispanic,fixed_rate,0.18291242061733864
+2015,race_eth,Hispanic,indexed_rate,0.18278934672377295
+2015,race_eth,NH Asian,fixed_rate,0.432597623089983
+2015,race_eth,NH Asian,indexed_rate,0.432597623089983
+2015,race_eth,NH Black,fixed_rate,0.23332774798927614
+2015,race_eth,NH Black,indexed_rate,0.23324396782841822
+2015,race_eth,NH Other,fixed_rate,0.31002132196162047
+2015,race_eth,NH Other,indexed_rate,0.3087420042643923
+2015,race_eth,NH White,fixed_rate,0.42951651704512117
+2015,race_eth,NH White,indexed_rate,0.42904711611805435
+2015,sex,Female,fixed_rate,0.24268284552303487
+2015,sex,Female,indexed_rate,0.24233282218814586
+2015,sex,Male,fixed_rate,0.40902962028619894
+2015,sex,Male,indexed_rate,0.40873965174778537
+2016,overall,all,fixed_rate,0.3415084408302756
+2016,overall,all,indexed_rate,0.3397767928659155
+2016,race_eth,Hispanic,fixed_rate,0.18873015490616493
+2016,race_eth,Hispanic,indexed_rate,0.18754968801946567
+2016,race_eth,NH Asian,fixed_rate,0.4469684850423932
+2016,race_eth,NH Asian,indexed_rate,0.4461686130219165
+2016,race_eth,NH Black,fixed_rate,0.24831341949118102
+2016,race_eth,NH Black,indexed_rate,0.24660651873526782
+2016,race_eth,NH Other,fixed_rate,0.3255523134639433
+2016,race_eth,NH Other,indexed_rate,0.32471863276365154
+2016,race_eth,NH White,fixed_rate,0.44157547321025253
+2016,race_eth,NH White,indexed_rate,0.4393897445611785
+2016,sex,Female,fixed_rate,0.259106529209622
+2016,sex,Female,indexed_rate,0.25725740468008507
+2016,sex,Male,fixed_rate,0.41346689721202073
+2016,sex,Male,indexed_rate,0.41183783706540533
+2017,overall,all,fixed_rate,0.35385419778906485
+2017,overall,all,indexed_rate,0.34772930982969824
+2017,race_eth,Hispanic,fixed_rate,0.2001741873219876
+2017,race_eth,Hispanic,indexed_rate,0.19572534896311466
+2017,race_eth,NH Asian,fixed_rate,0.4732394366197183
+2017,race_eth,NH Asian,indexed_rate,0.47057079318013345
+2017,race_eth,NH Black,fixed_rate,0.2671406390455177
+2017,race_eth,NH Black,indexed_rate,0.26150200212470376
+2017,race_eth,NH Other,fixed_rate,0.31734732109404273
+2017,race_eth,NH Other,indexed_rate,0.3132259273136006
+2017,race_eth,NH White,fixed_rate,0.4525277435265105
+2017,race_eth,NH White,indexed_rate,0.4448857282138044
+2017,sex,Female,fixed_rate,0.27199717871856116
+2017,sex,Female,indexed_rate,0.26584165557924433
+2017,sex,Male,fixed_rate,0.4252765850315398
+2017,sex,Male,indexed_rate,0.4191784270668699

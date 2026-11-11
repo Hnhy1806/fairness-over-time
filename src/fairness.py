@@ -222,7 +222,7 @@ def save_results(new: pd.DataFrame, path, keys=("year",)) -> pd.DataFrame:
     else:
         out = new.copy()
 
-    sort_cols = [c for c in ["year", "model", "mitigated", "attribute", "group", "metric"]
+    sort_cols = [c for c in ["year", "model", "mitigated", "attribute", "group", "metric", "feature"]
              if c in out.columns]
     
     out = out.sort_values(sort_cols, kind="stable").reset_index(drop=True)

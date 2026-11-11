@@ -13,11 +13,11 @@ def build_preprocessor(min_frequency=30):
             ('num', StandardScaler(), NUMERIC_COLS),
             ('ord', StandardScaler(), ORDINAL_COLS),
             ('nom', OneHotEncoder(
-                min_frequency=30,
+                min_frequency=min_frequency,
                 handle_unknown='infrequent_if_exist',
                 sparse_output=False
             ), NOMINAL_COLS)
         ],
         remainder='drop',
         verbose_feature_names_out=False
-    )
+    )  

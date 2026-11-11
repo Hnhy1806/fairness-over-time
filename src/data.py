@@ -6,7 +6,15 @@ import numpy as np
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
 ARTIFACTS_DIR = Path(__file__).resolve().parent.parent / "artifacts"
+RESULTS_DIR = ARTIFACTS_DIR / "results"
+REPORTS_DIR = Path(__file__).resolve().parent.parent / "reports"
 
+METRICS_PATH     = RESULTS_DIR / "metrics_over_time.csv"
+CI_PATH          = RESULTS_DIR / "ci_over_time.csv"
+LABEL_DRIFT_PATH = RESULTS_DIR / "label_drift.csv"
+DRIFT_PATH       = RESULTS_DIR / "drift_over_time.csv"
+SHAP_PATH        = RESULTS_DIR / "shap_over_time.csv"
+BACKGROUND_PATH  = ARTIFACTS_DIR / "background_sample.csv"
 
 #race/ethnicity function
 def make_race_eth(df):
