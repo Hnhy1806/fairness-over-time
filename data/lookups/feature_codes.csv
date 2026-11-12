@@ -1,0 +1,761 @@
+feature,code,label,in_model
+COW,1.0,"Employee of a private for-profit company or business, or of an individual, for wages, salary, or commissions",True
+COW,2.0,"Employee of a private not-for-profit, tax-exempt, or charitable organization",True
+COW,3.0,"Local government employee (city, county, etc.)",True
+COW,4.0,State government employee,True
+COW,5.0,Federal government employee,True
+COW,6.0,"Self-employed in own not incorporated business, professional practice, or farm",True
+COW,7.0,"Self-employed in own incorporated business, professional practice or farm",True
+COW,8.0,Working without pay in family business or farm,True
+COW,9.0,Unemployed and last worked 5 years ago or earlier or never worked,False
+SCHL,1.0,No schooling completed,True
+SCHL,2.0,"Nursery school, preschool",True
+SCHL,3.0,Kindergarten,True
+SCHL,4.0,Grade 1,True
+SCHL,5.0,Grade 2,True
+SCHL,6.0,Grade 3,True
+SCHL,7.0,Grade 4,True
+SCHL,8.0,Grade 5,True
+SCHL,9.0,Grade 6,True
+SCHL,10.0,Grade 7,True
+SCHL,11.0,Grade 8,True
+SCHL,12.0,Grade 9,True
+SCHL,13.0,Grade 10,True
+SCHL,14.0,Grade 11,True
+SCHL,15.0,12th grade - no diploma,True
+SCHL,16.0,Regular high school diploma,True
+SCHL,17.0,GED or alternative credential,True
+SCHL,18.0,"Some college, but less than 1 year",True
+SCHL,19.0,"1 or more years of college credit, no degree",True
+SCHL,20.0,Associate's degree,True
+SCHL,21.0,Bachelor's degree,True
+SCHL,22.0,Master's degree,True
+SCHL,23.0,Professional degree beyond a bachelor's degree,True
+SCHL,24.0,Doctorate degree,True
+MAR,1.0,Married,True
+MAR,2.0,Widowed,True
+MAR,3.0,Divorced,True
+MAR,4.0,Separated,True
+MAR,5.0,Never married or under 15 years old,True
+OCCP,10.0,MGR-Chief Executives And Legislators,True
+OCCP,20.0,MGR-General And Operations Managers,True
+OCCP,40.0,MGR-Advertising And Promotions Managers,False
+OCCP,50.0,MGR-Marketing And Sales Managers,True
+OCCP,60.0,MGR-Public Relations And Fundraising Managers,False
+OCCP,100.0,MGR-Administrative Services Managers,True
+OCCP,110.0,MGR-Computer And Information Systems Managers,True
+OCCP,120.0,MGR-Financial Managers,True
+OCCP,135.0,MGR-Compensation And Benefits Managers,False
+OCCP,136.0,MGR-Human Resources Managers,True
+OCCP,137.0,MGR-Training And Development Managers,True
+OCCP,140.0,MGR-Industrial Production Managers,True
+OCCP,150.0,MGR-Purchasing Managers,True
+OCCP,160.0,"MGR-Transportation, Storage, And Distribution Managers",True
+OCCP,205.0,"MGR-Farmers, Ranchers, And Other Agricultural Managers",True
+OCCP,220.0,MGR-Construction Managers,True
+OCCP,230.0,MGR-Education Administrators,True
+OCCP,300.0,MGR-Architectural And Engineering Managers,True
+OCCP,310.0,MGR-Food Service Managers,True
+OCCP,330.0,MGR-Gaming Managers,False
+OCCP,340.0,MGR-Lodging Managers,True
+OCCP,350.0,MGR-Medical And Health Services Managers,True
+OCCP,360.0,MGR-Natural Sciences Managers,False
+OCCP,410.0,"MGR-Property, Real Estate, And Community Association Managers",True
+OCCP,420.0,MGR-Social And Community Service Managers,True
+OCCP,425.0,MGR-Emergency Management Directors,False
+OCCP,430.0,"MGR-Miscellaneous Managers, Including Funeral Service Managers And Postmasters And Mail Superintendents",True
+OCCP,500.0,"BUS-Agents And Business Managers Of Artists, Performers, And Athletes",False
+OCCP,510.0,"BUS-Buyers And Purchasing Agents, Farm Products",False
+OCCP,520.0,"BUS-Wholesale And Retail Buyers, Except Farm Products",True
+OCCP,530.0,"BUS-Purchasing Agents, Except Wholesale, Retail, And Farm Products",True
+OCCP,540.0,"BUS-Claims Adjusters, Appraisers, Examiners, And Investigators",True
+OCCP,565.0,BUS-Compliance Officers,True
+OCCP,600.0,BUS-Cost Estimators,True
+OCCP,630.0,BUS-Human Resources Workers,True
+OCCP,640.0,"BUS-Compensation, Benefits, And Job Analysis Specialists",False
+OCCP,650.0,BUS-Training And Development Specialists,True
+OCCP,700.0,BUS-Logisticians,True
+OCCP,710.0,BUS-Management Analysts,True
+OCCP,725.0,"BUS-Meeting, Convention, And Event Planners",True
+OCCP,726.0,BUS-Fundraisers,False
+OCCP,735.0,BUS-Market Research Analysts And Marketing Specialists,True
+OCCP,740.0,"BUS-Business Operations Specialists, All Other",True
+OCCP,800.0,FIN-Accountants And Auditors,True
+OCCP,810.0,FIN-Appraisers And Assessors Of Real Estate,True
+OCCP,820.0,FIN-Budget Analysts,False
+OCCP,830.0,FIN-Credit Analysts,False
+OCCP,840.0,FIN-Financial Analysts,True
+OCCP,850.0,FIN-Personal Financial Advisors,True
+OCCP,860.0,FIN-Insurance Underwriters,True
+OCCP,900.0,FIN-Financial Examiners,False
+OCCP,910.0,FIN-Credit Counselors And Loan Officers,True
+OCCP,930.0,"FIN-Tax Examiners And Collectors, And Revenue Agents",True
+OCCP,940.0,FIN-Tax Preparers,True
+OCCP,950.0,"FIN-Financial Specialists, All Other",True
+OCCP,1005.0,CMM-Computer And Information Research Scientists,False
+OCCP,1006.0,CMM-Computer Systems Analysts,True
+OCCP,1007.0,CMM-Information Security Analysts,False
+OCCP,1010.0,CMM-Computer Programmers,True
+OCCP,1020.0,"CMM-Software Developers, Applications And Systems Software",True
+OCCP,1030.0,CMM-Web Developers,True
+OCCP,1050.0,CMM-Computer Support Specialists,True
+OCCP,1060.0,CMM-Database Administrators,True
+OCCP,1105.0,CMM-Network And Computer Systems Administrators,True
+OCCP,1106.0,CMM-Computer Network Architects,True
+OCCP,1107.0,"CMM-Computer Occupations, All Other",True
+OCCP,1200.0,CMM-Actuaries,False
+OCCP,1220.0,CMM-Operations Research Analysts,True
+OCCP,1240.0,"CMM-Miscellaneous Mathematical Science Occupations, Including Mathematicians And Statisticians",False
+OCCP,1300.0,"ENG-Architects, Except Naval",True
+OCCP,1310.0,"ENG-Surveyors, Cartographers, And Photogrammetrists",False
+OCCP,1320.0,ENG-Aerospace Engineers,True
+OCCP,1340.0,ENG-Biomedical And Agricultural Engineers,False
+OCCP,1350.0,ENG-Chemical Engineers,True
+OCCP,1360.0,ENG-Civil Engineers,True
+OCCP,1400.0,ENG-Computer Hardware Engineers,False
+OCCP,1410.0,ENG-Electrical And Electronics Engineers,True
+OCCP,1420.0,ENG-Environmental Engineers,False
+OCCP,1430.0,"ENG-Industrial Engineers, Including Health And Safety",True
+OCCP,1440.0,ENG-Marine Engineers And Naval Architects,False
+OCCP,1450.0,ENG-Materials Engineers,False
+OCCP,1460.0,ENG-Mechanical Engineers,True
+OCCP,1520.0,"ENG-Petroleum, Mining And Geological Engineers, Including Mining Safety Engineers",True
+OCCP,1530.0,"ENG-Miscellaneous Engineers, Including Nuclear Engineers",True
+OCCP,1540.0,ENG-Drafters,True
+OCCP,1550.0,"ENG-Engineering Technicians, Except Drafters",True
+OCCP,1560.0,ENG-Surveying And Mapping Technicians,True
+OCCP,1600.0,SCI-Agricultural And Food Scientists,False
+OCCP,1610.0,SCI-Biological Scientists,False
+OCCP,1640.0,SCI-Conservation Scientists And Foresters,False
+OCCP,1650.0,"SCI-Medical Scientists, And Life Scientists, All Other",True
+OCCP,1700.0,SCI-Astronomers And Physicists,False
+OCCP,1710.0,SCI-Atmospheric And Space Scientists,False
+OCCP,1720.0,SCI-Chemists And Materials Scientists,True
+OCCP,1740.0,SCI-Environmental Scientists And Geoscientists,True
+OCCP,1760.0,"SCI-Physical Scientists, All Other",True
+OCCP,1800.0,SCI-Economists,False
+OCCP,1820.0,SCI-Psychologists,True
+OCCP,1840.0,SCI-Urban And Regional Planners,False
+OCCP,1860.0,"SCI-Miscellaneous Social Scientists, Including Survey Researchers And Sociologists",False
+OCCP,1900.0,SCI-Agricultural And Food Science Technicians,False
+OCCP,1910.0,SCI-Biological Technicians,False
+OCCP,1920.0,SCI-Chemical Technicians,True
+OCCP,1930.0,"SCI-Geological And Petroleum Technicians, And Nuclear Technicians",True
+OCCP,1965.0,"SCI-Miscellaneous Life, Physical, And Social Science Technicians, Including Social Science Research Assistants",True
+OCCP,2000.0,CMS-Counselors,True
+OCCP,2010.0,CMS-Social Workers,True
+OCCP,2015.0,CMS-Probation Officers And Correctional Treatment Specialists,True
+OCCP,2016.0,CMS-Social And Human Service Assistants,True
+OCCP,2025.0,"CMS-Miscellaneous Community And Social Service Specialists, Including Health Educators And Community Health Workers",True
+OCCP,2040.0,CMS-Clergy,True
+OCCP,2050.0,"CMS-Directors, Religious Activities And Education",True
+OCCP,2060.0,"CMS-Religious Workers, All Other",True
+OCCP,2100.0,"LGL-Lawyers, And Judges, Magistrates, And Other Judicial Workers",True
+OCCP,2105.0,LGL-Judicial Law Clerks,False
+OCCP,2145.0,LGL-Paralegals And Legal Assistants,True
+OCCP,2160.0,LGL-Miscellaneous Legal Support Workers,True
+OCCP,2200.0,EDU-Postsecondary Teachers,True
+OCCP,2300.0,EDU-Preschool And Kindergarten Teachers,True
+OCCP,2310.0,EDU-Elementary And Middle School Teachers,True
+OCCP,2320.0,EDU-Secondary School Teachers,True
+OCCP,2330.0,EDU-Special Education Teachers,True
+OCCP,2340.0,EDU-Other Teachers And Instructors,True
+OCCP,2400.0,"EDU-Archivists, Curators, And Museum Technicians",False
+OCCP,2430.0,EDU-Librarians,True
+OCCP,2440.0,EDU-Library Technicians,False
+OCCP,2540.0,EDU-Teacher Assistants,True
+OCCP,2550.0,"EDU-Other Education, Training, And Library Workers",True
+OCCP,2600.0,ENT-Artists And Related Workers,True
+OCCP,2630.0,ENT-Designers,True
+OCCP,2700.0,ENT-Actors,False
+OCCP,2710.0,ENT-Producers And Directors,True
+OCCP,2720.0,"ENT-Athletes, Coaches, Umpires, And Related Workers",True
+OCCP,2740.0,ENT-Dancers And Choreographers,False
+OCCP,2750.0,"ENT-Musicians, Singers, And Related Workers",True
+OCCP,2760.0,"ENT-Entertainers And Performers, Sports And Related Workers, All Other",False
+OCCP,2800.0,ENT-Announcers,False
+OCCP,2810.0,"ENT-News Analysts, Reporters And Correspondents",False
+OCCP,2825.0,ENT-Public Relations Specialists,True
+OCCP,2830.0,ENT-Editors,True
+OCCP,2840.0,ENT-Technical Writers,True
+OCCP,2850.0,ENT-Writers And Authors,True
+OCCP,2860.0,ENT-Miscellaneous Media And Communication Workers,True
+OCCP,2900.0,"ENT-Broadcast And Sound Engineering Technicians And Radio Operators, And Media And Communication Equipment Workers, All Other",True
+OCCP,2910.0,ENT-Photographers,True
+OCCP,2920.0,"ENT-Television, Video, And Motion Picture Camera Operators And Editors",False
+OCCP,3000.0,MED-Chiropractors,False
+OCCP,3010.0,MED-Dentists,True
+OCCP,3030.0,MED-Dietitians And Nutritionists,True
+OCCP,3040.0,MED-Optometrists,False
+OCCP,3050.0,MED-Pharmacists,True
+OCCP,3060.0,MED-Physicians And Surgeons,True
+OCCP,3110.0,MED-Physician Assistants,True
+OCCP,3120.0,MED-Podiatrists,False
+OCCP,3140.0,MED-Audiologists,False
+OCCP,3150.0,MED-Occupational Therapists,True
+OCCP,3160.0,MED-Physical Therapists,True
+OCCP,3200.0,MED-Radiation Therapists,False
+OCCP,3210.0,MED-Recreational Therapists,False
+OCCP,3220.0,MED-Respiratory Therapists,True
+OCCP,3230.0,MED-Speech-Language Pathologists,True
+OCCP,3245.0,"MED-Other Therapists, Including Exercise Physiologists",True
+OCCP,3250.0,MED-Veterinarians,True
+OCCP,3255.0,MED-Registered Nurses,True
+OCCP,3256.0,MED-Nurse Anesthetists,False
+OCCP,3258.0,"MED-Nurse Practitioners, And Nurse Midwives",True
+OCCP,3260.0,"MED-Health Diagnosing And Treating Practitioners, All Other",False
+OCCP,3300.0,MED-Clinical Laboratory Technologists And Technicians,True
+OCCP,3310.0,MED-Dental Hygienists,True
+OCCP,3320.0,MED-Diagnostic Related Technologists And Technicians,True
+OCCP,3400.0,MED-Emergency Medical Technicians And Paramedics,True
+OCCP,3420.0,MED-Health Practitioner Support Technologists And Technicians,True
+OCCP,3500.0,MED-Licensed Practical And Licensed Vocational Nurses,True
+OCCP,3510.0,MED-Medical Records And Health Information Technicians,True
+OCCP,3520.0,"MED-Opticians, Dispensing",False
+OCCP,3535.0,MED-Miscellaneous Health Technologists And Technicians,True
+OCCP,3540.0,MED-Other Healthcare Practitioners And Technical Occupations,True
+OCCP,3600.0,"HLS-Nursing, Psychiatric, And Home Health Aides",True
+OCCP,3610.0,HLS-Occupational Therapy Assistants And Aides,False
+OCCP,3620.0,HLS-Physical Therapist Assistants And Aides,False
+OCCP,3630.0,HLS-Massage Therapists,True
+OCCP,3640.0,HLS-Dental Assistants,True
+OCCP,3645.0,HLS-Medical Assistants,True
+OCCP,3646.0,HLS-Medical Transcriptionists,False
+OCCP,3647.0,HLS-Pharmacy Aides,False
+OCCP,3648.0,HLS-Veterinary Assistants And Laboratory Animal Caretakers,False
+OCCP,3649.0,HLS-Phlebotomists,True
+OCCP,3655.0,"HLS-Healthcare Support Workers, All Other, Including Medical Equipment Preparers",True
+OCCP,3700.0,PRT-First-Line Supervisors Of Correctional Officers,True
+OCCP,3710.0,PRT-First-Line Supervisors Of Police And Detectives,True
+OCCP,3720.0,PRT-First-Line Supervisors Of Fire Fighting And Prevention Workers,False
+OCCP,3730.0,"PRT-First-Line Supervisors Of Protective Service Workers, All Other",True
+OCCP,3740.0,PRT-Firefighters,True
+OCCP,3750.0,PRT-Fire Inspectors,False
+OCCP,3800.0,"PRT-Bailiffs, Correctional Officers, And Jailers",True
+OCCP,3820.0,PRT-Detectives And Criminal Investigators,True
+OCCP,3840.0,PRT-Miscellaneous Law Enforcement Workers,False
+OCCP,3850.0,PRT-Police Officers,True
+OCCP,3900.0,PRT-Animal Control Workers,False
+OCCP,3910.0,PRT-Private Detectives And Investigators,True
+OCCP,3930.0,PRT-Security Guards And Gaming Surveillance Officers,True
+OCCP,3940.0,PRT-Crossing Guards,True
+OCCP,3945.0,PRT-Transportation Security Screeners,False
+OCCP,3955.0,"PRT-Lifeguards And Other Recreational, And All Other Protective Service Workers",True
+OCCP,4000.0,EAT-Chefs And Head Cooks,True
+OCCP,4010.0,EAT-First-Line Supervisors Of Food Preparation And Serving Workers,True
+OCCP,4020.0,EAT-Cooks,True
+OCCP,4030.0,EAT-Food Preparation Workers,True
+OCCP,4040.0,EAT-Bartenders,True
+OCCP,4050.0,"EAT-Combined Food Preparation And Serving Workers, Including Fast Food",True
+OCCP,4060.0,"EAT-Counter Attendants, Cafeteria, Food Concession, And Coffee Shop",True
+OCCP,4110.0,EAT-Waiters And Waitresses,True
+OCCP,4120.0,"EAT-Food Servers, Nonrestaurant",True
+OCCP,4130.0,"EAT-Miscellaneous Food Preparation And Serving Related Workers, Including Dining Room And Cafeteria Attendants And Bartender Helpers",True
+OCCP,4140.0,EAT-Dishwashers,True
+OCCP,4150.0,"EAT-Hosts And Hostesses, Restaurant, Lounge, And Coffee Shop",True
+OCCP,4200.0,CLN-First-Line Supervisors Of Housekeeping And Janitorial Workers,True
+OCCP,4210.0,"CLN-First-Line Supervisors Of Landscaping, Lawn Service, And Groundskeeping Workers",True
+OCCP,4220.0,CLN-Janitors And Building Cleaners,True
+OCCP,4230.0,CLN-Maids And Housekeeping Cleaners,True
+OCCP,4240.0,CLN-Pest Control Workers,True
+OCCP,4250.0,CLN-Grounds Maintenance Workers,True
+OCCP,4300.0,PRS-First-Line Supervisors Of Gaming Workers,False
+OCCP,4320.0,PRS-First-Line Supervisors Of Personal Service Workers,True
+OCCP,4340.0,PRS-Animal Trainers,True
+OCCP,4350.0,PRS-Nonfarm Animal Caretakers,True
+OCCP,4400.0,PRS-Gaming Services Workers,False
+OCCP,4410.0,PRS-Motion Picture Projectionists,False
+OCCP,4420.0,"PRS-Ushers, Lobby Attendants, And Ticket Takers",True
+OCCP,4430.0,PRS-Miscellaneous Entertainment Attendants And Related Workers,True
+OCCP,4460.0,PRS-Embalmers And Funeral Attendants,False
+OCCP,4465.0,"PRS-Morticians, Undertakers, And Funeral Directors",False
+OCCP,4500.0,PRS-Barbers,True
+OCCP,4510.0,"PRS-Hairdressers, Hairstylists, And Cosmetologists",True
+OCCP,4520.0,PRS-Miscellaneous Personal Appearance Workers,True
+OCCP,4530.0,"PRS-Baggage Porters, Bellhops, And Concierges",True
+OCCP,4540.0,PRS-Tour And Travel Guides,True
+OCCP,4600.0,PRS-Childcare Workers,True
+OCCP,4610.0,PRS-Personal Care Aides,True
+OCCP,4620.0,PRS-Recreation And Fitness Workers,True
+OCCP,4640.0,PRS-Residential Advisors,True
+OCCP,4650.0,"PRS-Personal Care And Service Workers, All Other",True
+OCCP,4700.0,SAL-First-Line Supervisors Of Retail Sales Workers,True
+OCCP,4710.0,SAL-First-Line Supervisors Of Non-Retail Sales Workers,True
+OCCP,4720.0,SAL-Cashiers,True
+OCCP,4740.0,SAL-Counter And Rental Clerks,True
+OCCP,4750.0,SAL-Parts Salespersons,True
+OCCP,4760.0,SAL-Retail Salespersons,True
+OCCP,4800.0,SAL-Advertising Sales Agents,True
+OCCP,4810.0,SAL-Insurance Sales Agents,True
+OCCP,4820.0,"SAL-Securities, Commodities, And Financial Services Sales Agents",True
+OCCP,4830.0,SAL-Travel Agents,True
+OCCP,4840.0,"SAL-Sales Representatives, Services, All Other",True
+OCCP,4850.0,"SAL-Sales Representatives, Wholesale And Manufacturing",True
+OCCP,4900.0,"SAL-Models, Demonstrators, And Product Promoters",True
+OCCP,4920.0,SAL-Real Estate Brokers And Sales Agents,True
+OCCP,4930.0,SAL-Sales Engineers,False
+OCCP,4940.0,SAL-Telemarketers,True
+OCCP,4950.0,"SAL-Door-To-Door Sales Workers, News And Street Vendors, And Related Workers",True
+OCCP,4965.0,"SAL-Sales And Related Workers, All Other",True
+OCCP,5000.0,OFF-First-Line Supervisors Of Office And Administrative Support Workers,True
+OCCP,5010.0,"OFF-Switchboard Operators, Including Answering Service",False
+OCCP,5020.0,OFF-Telephone Operators,True
+OCCP,5030.0,"OFF-Communications Equipment Operators, All Other",False
+OCCP,5100.0,OFF-Bill And Account Collectors,True
+OCCP,5110.0,OFF-Billing And Posting Clerks,True
+OCCP,5120.0,"OFF-Bookkeeping, Accounting, And Auditing Clerks",True
+OCCP,5130.0,OFF-Gaming Cage Workers,False
+OCCP,5140.0,OFF-Payroll And Timekeeping Clerks,True
+OCCP,5150.0,OFF-Procurement Clerks,False
+OCCP,5160.0,OFF-Tellers,True
+OCCP,5165.0,"OFF-Financial Clerks, All Other",True
+OCCP,5200.0,OFF-Brokerage Clerks,False
+OCCP,5220.0,"OFF-Court, Municipal, And License Clerks",True
+OCCP,5230.0,"OFF-Credit Authorizers, Checkers, And Clerks",False
+OCCP,5240.0,OFF-Customer Service Representatives,True
+OCCP,5250.0,"OFF-Eligibility Interviewers, Government Programs",True
+OCCP,5260.0,OFF-File Clerks,True
+OCCP,5300.0,"OFF-Hotel, Motel, And Resort Desk Clerks",True
+OCCP,5310.0,"OFF-Interviewers, Except Eligibility And Loan",True
+OCCP,5320.0,"OFF-Library Assistants, Clerical",True
+OCCP,5330.0,OFF-Loan Interviewers And Clerks,True
+OCCP,5340.0,OFF-New Accounts Clerks,False
+OCCP,5350.0,OFF-Correspondence Clerks And Order Clerks,True
+OCCP,5360.0,"OFF-Human Resources Assistants, Except Payroll And Timekeeping",True
+OCCP,5400.0,OFF-Receptionists And Information Clerks,True
+OCCP,5410.0,OFF-Reservation And Transportation Ticket Agents And Travel Clerks,True
+OCCP,5420.0,"OFF-Information And Record Clerks, All Other",True
+OCCP,5500.0,OFF-Cargo And Freight Agents,False
+OCCP,5510.0,OFF-Couriers And Messengers,True
+OCCP,5520.0,OFF-Dispatchers,True
+OCCP,5530.0,"OFF-Meter Readers, Utilities",False
+OCCP,5540.0,OFF-Postal Service Clerks,True
+OCCP,5550.0,OFF-Postal Service Mail Carriers,True
+OCCP,5560.0,"OFF-Postal Service Mail Sorters, Processors, And Processing Machine Operators",True
+OCCP,5600.0,"OFF-Production, Planning, And Expediting Clerks",True
+OCCP,5610.0,"OFF-Shipping, Receiving, And Traffic Clerks",True
+OCCP,5620.0,OFF-Stock Clerks And Order Fillers,True
+OCCP,5630.0,"OFF-Weighers, Measurers, Checkers, And Samplers, Recordkeeping",True
+OCCP,5700.0,OFF-Secretaries And Administrative Assistants,True
+OCCP,5800.0,OFF-Computer Operators,True
+OCCP,5810.0,OFF-Data Entry Keyers,True
+OCCP,5820.0,OFF-Word Processors And Typists,True
+OCCP,5840.0,OFF-Insurance Claims And Policy Processing Clerks,True
+OCCP,5850.0,"OFF-Mail Clerks And Mail Machine Operators, Except Postal Service",True
+OCCP,5860.0,"OFF-Office Clerks, General",True
+OCCP,5900.0,"OFF-Office Machine Operators, Except Computer",False
+OCCP,5910.0,OFF-Proofreaders And Copy Markers,False
+OCCP,5920.0,OFF-Statistical Assistants,False
+OCCP,5940.0,"OFF-Miscellaneous Office And Administrative Support Workers, Including Desktop Publishers",True
+OCCP,6005.0,"FFF-First-Line Supervisors Of Farming, Fishing, And Forestry Workers",False
+OCCP,6010.0,FFF-Agricultural Inspectors,False
+OCCP,6040.0,"FFF-Graders And Sorters, Agricultural Products",False
+OCCP,6050.0,"FFF-Miscellaneous Agricultural Workers, Including Animal Breeders",True
+OCCP,6100.0,FFF-Fishing And Hunting Workers,False
+OCCP,6120.0,FFF-Forest And Conservation Workers,False
+OCCP,6130.0,FFF-Logging Workers,False
+OCCP,6200.0,CON-First-Line Supervisors Of Construction Trades And Extraction Workers,True
+OCCP,6210.0,CON-Boilermakers,False
+OCCP,6220.0,"CON-Brickmasons, Blockmasons, Stonemasons, And Reinforcing Iron And Rebar Workers",True
+OCCP,6230.0,CON-Carpenters,True
+OCCP,6240.0,"CON-Carpet, Floor, And Tile Installers And Finishers",True
+OCCP,6250.0,"CON-Cement Masons, Concrete Finishers, And Terrazzo Workers",False
+OCCP,6260.0,CON-Construction Laborers,True
+OCCP,6300.0,"CON-Paving, Surfacing, And Tamping Equipment Operators",False
+OCCP,6320.0,"CON-Construction Equipment Operators, Except Paving, Surfacing, And Tamping Equipment Operators",True
+OCCP,6330.0,"CON-Drywall Installers, Ceiling Tile Installers, And Tapers",True
+OCCP,6355.0,CON-Electricians,True
+OCCP,6360.0,CON-Glaziers,False
+OCCP,6400.0,CON-Insulation Workers,True
+OCCP,6420.0,CON-Painters And Paperhangers,True
+OCCP,6440.0,"CON-Pipelayers, Plumbers, Pipefitters, And Steamfitters",True
+OCCP,6460.0,CON-Plasterers And Stucco Masons,False
+OCCP,6515.0,CON-Roofers,True
+OCCP,6520.0,CON-Sheet Metal Workers,True
+OCCP,6530.0,CON-Structural Iron And Steel Workers,True
+OCCP,6600.0,"CON-Helpers, Construction Trades",True
+OCCP,6660.0,CON-Construction And Building Inspectors,True
+OCCP,6700.0,CON-Elevator Installers And Repairers,False
+OCCP,6710.0,CON-Fence Erectors,True
+OCCP,6720.0,CON-Hazardous Materials Removal Workers,False
+OCCP,6730.0,CON-Highway Maintenance Workers,True
+OCCP,6740.0,CON-Rail-Track Laying And Maintenance Equipment Operators,False
+OCCP,6765.0,"CON-Miscellaneous Construction Workers, Including Solar Photovoltaic Installers, Septic Tank Servicers And Sewer Pipe Cleaners",False
+OCCP,6800.0,"EXT-Derrick, Rotary Drill, And Service Unit Operators, And Roustabouts, Oil, Gas, And Mining",True
+OCCP,6820.0,"EXT-Earth Drillers, Except Oil And Gas",False
+OCCP,6830.0,"EXT-Explosives Workers, Ordnance Handling Experts, And Blasters",False
+OCCP,6840.0,EXT-Mining Machine Operators,True
+OCCP,6940.0,"EXT-Miscellaneous Extraction Workers, Including Roof Bolters And Helpers",True
+OCCP,7000.0,"RPR-First-Line Supervisors Of Mechanics, Installers, And Repairers",True
+OCCP,7010.0,"RPR-Computer, Automated Teller, And Office Machine Repairers",True
+OCCP,7020.0,RPR-Radio And Telecommunications Equipment Installers And Repairers,True
+OCCP,7030.0,RPR-Avionics Technicians,False
+OCCP,7040.0,"RPR-Electric Motor, Power Tool, And Related Repairers",False
+OCCP,7100.0,"RPR-Electrical And Electronics Repairers, Transportation Equipment, And Industrial And Utility",False
+OCCP,7110.0,"RPR-Electronic Equipment Installers And Repairers, Motor Vehicles",False
+OCCP,7120.0,RPR-Electronic Home Entertainment Equipment Installers And Repairers,False
+OCCP,7130.0,RPR-Security And Fire Alarm Systems Installers,False
+OCCP,7140.0,RPR-Aircraft Mechanics And Service Technicians,True
+OCCP,7150.0,RPR-Automotive Body And Related Repairers,True
+OCCP,7160.0,RPR-Automotive Glass Installers And Repairers,False
+OCCP,7200.0,RPR-Automotive Service Technicians And Mechanics,True
+OCCP,7210.0,RPR-Bus And Truck Mechanics And Diesel Engine Specialists,True
+OCCP,7220.0,RPR-Heavy Vehicle And Mobile Equipment Service Technicians And Mechanics,True
+OCCP,7240.0,RPR-Small Engine Mechanics,False
+OCCP,7260.0,"RPR-Miscellaneous Vehicle And Mobile Equipment Mechanics, Installers, And Repairers",True
+OCCP,7300.0,RPR-Control And Valve Installers And Repairers,False
+OCCP,7315.0,"RPR-Heating, Air Conditioning, And Refrigeration Mechanics And Installers",True
+OCCP,7320.0,RPR-Home Appliance Repairers,False
+OCCP,7330.0,RPR-Industrial And Refractory Machinery Mechanics,True
+OCCP,7340.0,"RPR-Maintenance And Repair Workers, General",True
+OCCP,7350.0,"RPR-Maintenance Workers, Machinery",False
+OCCP,7360.0,RPR-Millwrights,False
+OCCP,7410.0,RPR-Electrical Power-Line Installers And Repairers,True
+OCCP,7420.0,RPR-Telecommunications Line Installers And Repairers,True
+OCCP,7430.0,RPR-Precision Instrument And Equipment Repairers,True
+OCCP,7510.0,"RPR-Coin, Vending, And Amusement Machine Servicers And Repairers",False
+OCCP,7540.0,RPR-Locksmiths And Safe Repairers,False
+OCCP,7560.0,RPR-Riggers,False
+OCCP,7610.0,"RPR-Helpers--Installation, Maintenance, And Repair Workers",False
+OCCP,7630.0,"RPR-Miscellaneous Installation, Maintenance, And Repair Workers, Including Wind Turbine Service Technicians",True
+OCCP,7700.0,PRD-First-Line Supervisors Of Production And Operating Workers,True
+OCCP,7710.0,"PRD-Aircraft Structure, Surfaces, Rigging, And Systems Assemblers",False
+OCCP,7720.0,"PRD-Electrical, Electronics, And Electromechanical Assemblers",True
+OCCP,7730.0,PRD-Engine And Other Machine Assemblers,False
+OCCP,7740.0,PRD-Structural Metal Fabricators And Fitters,False
+OCCP,7750.0,PRD-Miscellaneous Assemblers And Fabricators,True
+OCCP,7800.0,PRD-Bakers,True
+OCCP,7810.0,"PRD-Butchers And Other Meat, Poultry, And Fish Processing Workers",True
+OCCP,7830.0,"PRD-Food And Tobacco Roasting, Baking, And Drying Machine Operators And Tenders",False
+OCCP,7840.0,PRD-Food Batchmakers,True
+OCCP,7850.0,PRD-Food Cooking Machine Operators And Tenders,False
+OCCP,7855.0,"PRD-Food Processing Workers, All Other",True
+OCCP,7900.0,PRD-Computer Control Programmers And Operators,False
+OCCP,7920.0,"PRD-Extruding And Drawing Machine Setters, Operators, And Tenders, Metal And Plastic",False
+OCCP,7930.0,"PRD-Forging Machine Setters, Operators, And Tenders, Metal And Plastic",False
+OCCP,7940.0,"PRD-Rolling Machine Setters, Operators, And Tenders, Metal And Plastic",False
+OCCP,7950.0,"PRD-Machine Tool Cutting Setters, Operators, And Tenders, Metal And Plastic",True
+OCCP,8030.0,PRD-Machinists,True
+OCCP,8040.0,"PRD-Metal Furnace Operators, Tenders, Pourers, And Casters",False
+OCCP,8100.0,"PRD-Model Makers, Patternmakers, And Molding Machine Setters, Metal And Plastic",False
+OCCP,8130.0,PRD-Tool And Die Makers,False
+OCCP,8140.0,"PRD-Welding, Soldering, And Brazing Workers",True
+OCCP,8220.0,"PRD-Miscellaneous Metal Workers And Plastic Workers, Including Multiple Machine Tool Setters",True
+OCCP,8250.0,PRD-Prepress Technicians And Workers,False
+OCCP,8255.0,PRD-Printing Press Operators,True
+OCCP,8256.0,PRD-Print Binding And Finishing Workers,False
+OCCP,8300.0,PRD-Laundry And Dry-Cleaning Workers,True
+OCCP,8310.0,"PRD-Pressers, Textile, Garment, And Related Materials",True
+OCCP,8320.0,PRD-Sewing Machine Operators,True
+OCCP,8330.0,PRD-Shoe And Leather Workers,False
+OCCP,8350.0,"PRD-Tailors, Dressmakers, And Sewers",True
+OCCP,8400.0,"PRD-Textile Bleaching And Dyeing, And Cutting Machine Setters, Operators, And Tenders",False
+OCCP,8410.0,"PRD-Textile Knitting And Weaving Machine Setters, Operators, And Tenders",False
+OCCP,8420.0,"PRD-Textile Winding, Twisting, And Drawing Out Machine Setters, Operators, And Tenders",False
+OCCP,8450.0,PRD-Upholsterers,False
+OCCP,8460.0,"PRD-Miscellaneous Textile, Apparel, And Furnishings Workers, Except Upholsterers",False
+OCCP,8500.0,PRD-Cabinetmakers And Bench Carpenters,False
+OCCP,8510.0,PRD-Furniture Finishers,False
+OCCP,8530.0,"PRD-Sawing Machine Setters, Operators, And Tenders, Wood",False
+OCCP,8540.0,"PRD-Woodworking Machine Setters, Operators, And Tenders, Except Sawing",False
+OCCP,8550.0,"PRD-Miscellaneous Woodworkers, Including Model Makers And Patternmakers",False
+OCCP,8600.0,"PRD-Power Plant Operators, Distributors, And Dispatchers",True
+OCCP,8610.0,PRD-Stationary Engineers And Boiler Operators,True
+OCCP,8620.0,PRD-Water And Wastewater Treatment Plant And System Operators,True
+OCCP,8630.0,PRD-Miscellaneous Plant And System Operators,True
+OCCP,8640.0,"PRD-Chemical Processing Machine Setters, Operators, And Tenders",False
+OCCP,8650.0,"PRD-Crushing, Grinding, Polishing, Mixing, And Blending Workers",True
+OCCP,8710.0,PRD-Cutting Workers,False
+OCCP,8720.0,"PRD-Extruding, Forming, Pressing, And Compacting Machine Setters, Operators, And Tenders",False
+OCCP,8730.0,"PRD-Furnace, Kiln, Oven, Drier, And Kettle Operators And Tenders",False
+OCCP,8740.0,"PRD-Inspectors, Testers, Sorters, Samplers, And Weighers",True
+OCCP,8750.0,PRD-Jewelers And Precious Stone And Metal Workers,False
+OCCP,8760.0,"PRD-Medical, Dental, And Ophthalmic Laboratory Technicians",False
+OCCP,8800.0,PRD-Packaging And Filling Machine Operators And Tenders,True
+OCCP,8810.0,PRD-Painting Workers,True
+OCCP,8830.0,PRD-Photographic Process Workers And Processing Machine Operators,False
+OCCP,8850.0,PRD-Adhesive Bonding Machine Operators And Tenders,False
+OCCP,8910.0,PRD-Etchers And Engravers,False
+OCCP,8920.0,"PRD-Molders, Shapers, And Casters, Except Metal And Plastic",False
+OCCP,8930.0,"PRD-Paper Goods Machine Setters, Operators, And Tenders",False
+OCCP,8940.0,PRD-Tire Builders,False
+OCCP,8950.0,PRD-Helpers-Production Workers,True
+OCCP,8965.0,"PRD-Miscellaneous Production Workers, Including Semiconductor Processors",True
+OCCP,9000.0,TRN-Supervisors Of Transportation And Material Moving Workers,True
+OCCP,9030.0,TRN-Aircraft Pilots And Flight Engineers,True
+OCCP,9040.0,TRN-Air Traffic Controllers And Airfield Operations Specialists,False
+OCCP,9050.0,TRN-Flight Attendants,True
+OCCP,9110.0,"TRN-Ambulance Drivers And Attendants, Except Emergency Medical Technicians",False
+OCCP,9120.0,TRN-Bus Drivers,True
+OCCP,9130.0,TRN-Driver/Sales Workers And Truck Drivers,True
+OCCP,9140.0,TRN-Taxi Drivers And Chauffeurs,True
+OCCP,9150.0,"TRN-Motor Vehicle Operators, All Other",True
+OCCP,9200.0,TRN-Locomotive Engineers And Operators,False
+OCCP,9240.0,TRN-Railroad Conductors And Yardmasters,False
+OCCP,9260.0,"TRN-Subway, Streetcar, And Other Rail Transportation Workers",False
+OCCP,9300.0,"TRN-Sailors And Marine Oilers, And Ship Engineers",False
+OCCP,9310.0,TRN-Ship And Boat Captains And Operators,False
+OCCP,9350.0,TRN-Parking Lot Attendants,True
+OCCP,9360.0,TRN-Automotive And Watercraft Service Attendants,True
+OCCP,9410.0,TRN-Transportation Inspectors,True
+OCCP,9415.0,"TRN-Transportation Attendants, Except Flight Attendants",False
+OCCP,9420.0,"TRN-Miscellaneous Transportation Workers, Including Bridge And Lock Tenders And Traffic Technicians",False
+OCCP,9510.0,TRN-Crane And Tower Operators,True
+OCCP,9520.0,"TRN-Dredge, Excavating, And Loading Machine Operators",False
+OCCP,9560.0,"TRN-Conveyor Operators And Tenders, And Hoist And Winch Operators",False
+OCCP,9600.0,TRN-Industrial Truck And Tractor Operators,True
+OCCP,9610.0,TRN-Cleaners Of Vehicles And Equipment,True
+OCCP,9620.0,"TRN-Laborers And Freight, Stock, And Material Movers, Hand",True
+OCCP,9630.0,TRN-Machine Feeders And Offbearers,False
+OCCP,9640.0,"TRN-Packers And Packagers, Hand",True
+OCCP,9650.0,TRN-Pumping Station Operators,True
+OCCP,9720.0,TRN-Refuse And Recyclable Material Collectors,True
+OCCP,9750.0,"TRN-Miscellaneous Material Moving Workers, Including Mine Shuttle Car Operators, And Tank Car, Truck, And Ship Loaders",False
+OCCP,9800.0,MIL-Military Officer Special And Tactical Operations Leaders,False
+OCCP,9810.0,MIL-First-Line Enlisted Military Supervisors,True
+OCCP,9820.0,MIL-Military Enlisted Tactical Operations And Air/Weapons Specialists And Crew Members,True
+OCCP,9830.0,"MIL-Military, Rank Not Specified",True
+OCCP,9920.0,Unemployed And Last Worked 5 Years Ago Or Earlier Or Never Worked,False
+POBP,1.0,Alabama/AL,True
+POBP,2.0,Alaska/AK,True
+POBP,4.0,Arizona/AZ,True
+POBP,5.0,Arkansas/AR,True
+POBP,6.0,California/CA,True
+POBP,8.0,Colorado/CO,True
+POBP,9.0,Connecticut/CT,True
+POBP,10.0,Delaware/DE,True
+POBP,11.0,District of Columbia/DC,True
+POBP,12.0,Florida/FL,True
+POBP,13.0,Georgia/GA,True
+POBP,15.0,Hawaii/HI,True
+POBP,16.0,Idaho/ID,True
+POBP,17.0,Illinois/IL,True
+POBP,18.0,Indiana/IN,True
+POBP,19.0,Iowa/IA,True
+POBP,20.0,Kansas/KS,True
+POBP,21.0,Kentucky/KY,True
+POBP,22.0,Louisiana/LA,True
+POBP,23.0,Maine/ME,True
+POBP,24.0,Maryland/MD,True
+POBP,25.0,Massachusetts/MA,True
+POBP,26.0,Michigan/MI,True
+POBP,27.0,Minnesota/MN,True
+POBP,28.0,Mississippi/MS,True
+POBP,29.0,Missouri/MO,True
+POBP,30.0,Montana/MT,True
+POBP,31.0,Nebraska/NE,True
+POBP,32.0,Nevada/NV,True
+POBP,33.0,New Hampshire/NH,True
+POBP,34.0,New Jersey/NJ,True
+POBP,35.0,New Mexico/NM,True
+POBP,36.0,New York/NY,True
+POBP,37.0,North Carolina/NC,True
+POBP,38.0,North Dakota/ND,True
+POBP,39.0,Ohio/OH,True
+POBP,40.0,Oklahoma/OK,True
+POBP,41.0,Oregon/OR,True
+POBP,42.0,Pennsylvania/PA,True
+POBP,44.0,Rhode Island/RI,True
+POBP,45.0,South Carolina/SC,True
+POBP,46.0,South Dakota/SD,True
+POBP,47.0,Tennessee/TN,True
+POBP,48.0,Texas/TX,True
+POBP,49.0,Utah/UT,True
+POBP,50.0,Vermont/VT,False
+POBP,51.0,Virginia/VA,True
+POBP,53.0,Washington/WA,True
+POBP,54.0,West Virginia/WV,True
+POBP,55.0,Wisconsin/WI,True
+POBP,56.0,Wyoming/WY,True
+POBP,60.0,American Samoa,False
+POBP,66.0,Guam,False
+POBP,69.0,Commonwealth of the Northern Mariana Islands,False
+POBP,72.0,Puerto Rico,True
+POBP,78.0,US Virgin Islands,False
+POBP,100.0,Albania,False
+POBP,102.0,Austria,False
+POBP,103.0,Belgium,False
+POBP,104.0,Bulgaria,False
+POBP,105.0,Czechoslovakia,False
+POBP,106.0,Denmark,False
+POBP,108.0,Finland,False
+POBP,109.0,France,True
+POBP,110.0,Germany,True
+POBP,116.0,Greece,False
+POBP,117.0,Hungary,False
+POBP,118.0,Iceland,False
+POBP,119.0,Ireland,False
+POBP,120.0,Italy,True
+POBP,126.0,Netherlands,False
+POBP,127.0,Norway,False
+POBP,128.0,Poland,False
+POBP,129.0,Portugal,False
+POBP,130.0,Azores Islands,False
+POBP,132.0,Romania,False
+POBP,134.0,Spain,True
+POBP,136.0,Sweden,False
+POBP,137.0,Switzerland,False
+POBP,138.0,"United Kingdom, Not Specified",True
+POBP,139.0,England,True
+POBP,140.0,Scotland,True
+POBP,142.0,Northern Ireland,False
+POBP,147.0,Yugoslavia,False
+POBP,148.0,Czech Republic,False
+POBP,149.0,Slovakia,False
+POBP,150.0,Bosnia and Herzegovina,False
+POBP,151.0,Croatia,False
+POBP,152.0,Macedonia,False
+POBP,154.0,Serbia,False
+POBP,156.0,Latvia,False
+POBP,157.0,Lithuania,False
+POBP,158.0,Armenia,False
+POBP,159.0,Azerbaijan,False
+POBP,160.0,Belarus,False
+POBP,161.0,Georgia,False
+POBP,162.0,Moldova,False
+POBP,163.0,Russia,True
+POBP,164.0,Ukraine,False
+POBP,165.0,USSR,False
+POBP,166.0,Europe,False
+POBP,167.0,Kosovo,False
+POBP,168.0,Montenegro,False
+POBP,169.0,"Other Europe, Not Specified",False
+POBP,200.0,Afghanistan,False
+POBP,202.0,Bangladesh,True
+POBP,203.0,Bhutan,False
+POBP,205.0,Myanmar,False
+POBP,206.0,Cambodia,True
+POBP,207.0,China,True
+POBP,208.0,Code 208 (not in the 2017 dictionary),False
+POBP,209.0,Hong Kong,True
+POBP,210.0,India,True
+POBP,211.0,Indonesia,True
+POBP,212.0,Iran,True
+POBP,213.0,Iraq,True
+POBP,214.0,Israel,False
+POBP,215.0,Japan,True
+POBP,216.0,Jordan,False
+POBP,217.0,Korea,True
+POBP,218.0,Kazakhstan,False
+POBP,219.0,Kyrgyzstan,False
+POBP,222.0,Kuwait,False
+POBP,223.0,Laos,True
+POBP,224.0,Lebanon,True
+POBP,226.0,Malaysia,False
+POBP,228.0,Mongolia,False
+POBP,229.0,Nepal,True
+POBP,231.0,Pakistan,True
+POBP,233.0,Philippines,True
+POBP,235.0,Saudi Arabia,False
+POBP,236.0,Singapore,False
+POBP,238.0,Sri Lanka,False
+POBP,239.0,Syria,False
+POBP,240.0,Taiwan,True
+POBP,242.0,Thailand,True
+POBP,243.0,Turkey,False
+POBP,245.0,United Arab Emirates,False
+POBP,246.0,Uzbekistan,False
+POBP,247.0,Vietnam,True
+POBP,248.0,Yemen,False
+POBP,249.0,Asia,False
+POBP,253.0,"South Central Asia, Not Specified",False
+POBP,254.0,"Other Asia, Not Specified",False
+POBP,300.0,Bermuda,False
+POBP,301.0,Canada,True
+POBP,303.0,Mexico,True
+POBP,310.0,Belize,False
+POBP,311.0,Costa Rica,False
+POBP,312.0,El Salvador,True
+POBP,313.0,Guatemala,True
+POBP,314.0,Honduras,True
+POBP,315.0,Nicaragua,True
+POBP,316.0,Panama,True
+POBP,321.0,Antigua & Barbuda,False
+POBP,323.0,Bahamas,False
+POBP,324.0,Barbados,False
+POBP,327.0,Cuba,True
+POBP,328.0,Dominica,False
+POBP,329.0,Dominican Republic,True
+POBP,330.0,Grenada,False
+POBP,332.0,Haiti,False
+POBP,333.0,Jamaica,True
+POBP,338.0,St. Kitts-Nevis,False
+POBP,339.0,St. Lucia,False
+POBP,340.0,St. Vincent & the Grenadines,False
+POBP,341.0,Trinidad & Tobago,True
+POBP,343.0,West Indies,False
+POBP,344.0,"Caribbean, Not Specified",False
+POBP,360.0,Argentina,True
+POBP,361.0,Bolivia,False
+POBP,362.0,Brazil,True
+POBP,363.0,Chile,False
+POBP,364.0,Colombia,True
+POBP,365.0,Ecuador,False
+POBP,368.0,Guyana,False
+POBP,369.0,Paraguay,False
+POBP,370.0,Peru,True
+POBP,372.0,Uruguay,False
+POBP,373.0,Venezuela,True
+POBP,374.0,South America,False
+POBP,399.0,"Americas, Not Specified",False
+POBP,400.0,Algeria,False
+POBP,407.0,Cameroon,False
+POBP,408.0,Cabo Verde,False
+POBP,412.0,Congo,False
+POBP,414.0,Egypt,False
+POBP,416.0,Ethiopia,True
+POBP,417.0,Eritrea,False
+POBP,420.0,Gambia,False
+POBP,421.0,Ghana,False
+POBP,423.0,Guinea,False
+POBP,425.0,Ivory Coast,False
+POBP,427.0,Kenya,True
+POBP,429.0,Liberia,False
+POBP,430.0,Libya,False
+POBP,436.0,Morocco,False
+POBP,440.0,Nigeria,True
+POBP,442.0,Rwanda,False
+POBP,444.0,Senegal,False
+POBP,447.0,Sierra Leone,False
+POBP,448.0,Somalia,False
+POBP,449.0,South Africa,True
+POBP,451.0,Sudan,False
+POBP,453.0,Tanzania,False
+POBP,454.0,Togo,False
+POBP,456.0,Tunisia,False
+POBP,457.0,Uganda,False
+POBP,459.0,Democratic Republic of Congo (Zaire),False
+POBP,460.0,Zambia,False
+POBP,461.0,Zimbabwe,False
+POBP,462.0,Africa,True
+POBP,463.0,South Sudan,False
+POBP,464.0,"Northern Africa, Not Specified",False
+POBP,467.0,"Western Africa, Not Specified",False
+POBP,468.0,"Other Africa, Not Specified",False
+POBP,469.0,"Eastern Africa, Not Specified",False
+POBP,501.0,Australia,False
+POBP,508.0,Fiji,False
+POBP,511.0,Marshall Islands,False
+POBP,512.0,Micronesia,False
+POBP,515.0,New Zealand,False
+POBP,523.0,Tonga,False
+POBP,527.0,Samoa,False
+POBP,554.0,"Other US Island Areas, Oceania, Not Specified, or at Sea",False
+RELP,0.0,Reference person,True
+RELP,1.0,Husband/wife,True
+RELP,2.0,Biological son or daughter,True
+RELP,3.0,Adopted son or daughter,True
+RELP,4.0,Stepson or stepdaughter,True
+RELP,5.0,Brother or sister,True
+RELP,6.0,Father or mother,True
+RELP,7.0,Grandchild,True
+RELP,8.0,Parent-in-law,True
+RELP,9.0,Son-in-law or daughter-in-law,True
+RELP,10.0,Other relative,True
+RELP,11.0,Roomer or boarder,True
+RELP,12.0,Housemate or roommate,True
+RELP,13.0,Unmarried partner,True
+RELP,14.0,Foster child,False
+RELP,15.0,Other nonrelative,True
+RELP,16.0,Institutionalized group quarters population,True
+RELP,17.0,Noninstitutionalized group quarters population,True

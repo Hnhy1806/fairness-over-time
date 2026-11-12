@@ -15,6 +15,7 @@ from src.data import (
     FIX_PATH,
     BACKGROUND_PATH,
 )
+from src.lookups import load_lookups
 from src.models import load_models
 
 # Results files the app reads (name -> path), used by pages and the artifact check
@@ -47,3 +48,8 @@ def get_models():
 def load_background():
     """500 raw 2014 training rows used as the SHAP background (Try a Profile)."""
     return pd.read_csv(BACKGROUND_PATH)
+
+@st.cache_data
+def get_lookups():
+    """Code -> label table for the input widgets (feature, code, label, in_model)."""
+    return load_lookups()
