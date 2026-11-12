@@ -1,0 +1,19 @@
+# Runtime dependencies for the Streamlit app (Streamlit Community Cloud).
+# Local development uses environment-dev.yml (conda).
+# Versions match environment-dev.yml. scikit-learn and xgboost MUST match
+# the versions the frozen models in artifacts/models/ were saved with.
+
+streamlit==1.66.1
+altair            # comes with streamlit; listed because pages import it directly
+pandas==2.3.3
+numpy==2.4.6
+scipy==1.17.1     # needed by shap and scikit-learn
+scikit-learn==1.9.1
+xgboost==3.4.2
+fairlearn==0.14.0 # src.models imports it, so loading the models needs it
+shap==0.51.0      # Try a Profile (src.explain)
+folktables==0.0.12 # imported at the top of src/data.py
+joblib==1.6.0
+
+# Install the project itself so `from src... import ...` works (same as locally)
+-e .

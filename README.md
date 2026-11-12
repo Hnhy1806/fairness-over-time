@@ -7,7 +7,7 @@ and compare maintenance strategies.
 
 ## Setup
 
-conda env create -f environment.yml
+conda env create -f environment-dev.yml
 conda activate fairness
 pip install -e .
 
