@@ -12,6 +12,8 @@ from fairlearn.reductions import EqualizedOdds, ExponentiatedGradient
 import joblib
 from src.data import ARTIFACTS_DIR
 
+from sklearn.base import BaseEstimator, ClassifierMixin
+
 RANDOM_STATE = 42
 
 MODEL_DIR = ARTIFACTS_DIR / "models"
@@ -118,3 +120,67 @@ def load_models(model_dir=MODEL_DIR):
     evaluates exactly the same saved models. Never refits.
     """
     return {name: joblib.load(model_dir / f"{name}.joblib") for name in MODEL_INFO}
+
+class GlobalThresholdClassifier:
+    """Frozen base model + one decision cutoff. Never refits the base."""
+
+    def __init__(self, base, threshold):
+        self.base = base
+        self.threshold = threshold
+        self.classes_ = base.classes_
+
+    def predict_proba(self, X):
+        return self.base.predict_proba(X)              # scores unchanged
+
+    def predict(self, X):
+        score = self.base.predict_proba(X)[:, 1]
+        return np.where(score >= self.threshold, self.classes_[1], self.classes_[0])
+
+from fairlearn.postprocessing import ThresholdOptimizer
+
+SENSITIVE_COLS = ["SEX", "race_eth"]   # 2 columns -> 10 intersectional groups
+
+class _Float64Scores(BaseEstimator, ClassifierMixin):
+    """Adapter for ThresholdOptimizer: casts scores to float64 (XGBoost returns
+    float32, which Fairlearn + pandas 2.x reject). Refuses to refit."""
+
+    def __init__(self, base):
+        self.base = base
+        self.classes_ = base.classes_
+
+    def fit(self, X, y):
+        raise RuntimeError("Frozen model: never refit.")
+
+    def predict_proba(self, X):
+        return np.asarray(self.base.predict_proba(X), dtype=np.float64)
+
+    def __sklearn_is_fitted__(self):
+        return True
+
+class GroupThresholdClassifier:
+    """Frozen base model + group-specific (randomized) cutoffs for equalized odds.
+    Reads the sensitive columns from X. Never refits the base."""
+
+    def __init__(self, base, seed=42):
+        self.base = base
+        self.seed = seed
+        self.classes_ = base.classes_
+
+    def fit(self, X, y):
+        self.to_ = ThresholdOptimizer(
+            estimator=_Float64Scores(self.base),
+            constraints="equalized_odds",
+            objective="accuracy_score",
+            prefit=True,                     # do NOT refit the frozen pipeline
+            predict_method="predict_proba",
+        )
+        self.to_.fit(X, np.asarray(y).astype(int), sensitive_features=X[SENSITIVE_COLS])
+        return self
+
+    def predict_proba(self, X):
+        return self.base.predict_proba(X)    # base scores, so AUC = S0
+
+    def predict(self, X):
+        pred = self.to_.predict(X, sensitive_features=X[SENSITIVE_COLS],
+                                random_state=self.seed)
+        return np.where(pred == 1, self.classes_[1], self.classes_[0])

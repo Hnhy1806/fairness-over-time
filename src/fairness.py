@@ -231,3 +231,17 @@ def save_results(new: pd.DataFrame, path, keys=("year",)) -> pd.DataFrame:
     out.to_csv(path, index=False)
     return out
 
+FIX_COLS = ["strategy", "model", "attribute", "group", "metric", "value"]
+
+def to_fix_rows(eval_df, strategy, model, fit_seconds):
+    """Convert one evaluate_model result to the fix_comparison.csv format,
+    plus one fit_seconds row."""
+    out = eval_df.drop(columns=["year", "model", "mitigated"], errors="ignore").copy()
+    out["strategy"] = strategy
+    out["model"] = model
+    fit_row = pd.DataFrame([{
+        "strategy": strategy, "model": model,
+        "attribute": "overall", "group": "all",
+        "metric": "fit_seconds", "value": float(fit_seconds),
+    }])
+    return pd.concat([out, fit_row], ignore_index=True)[FIX_COLS]

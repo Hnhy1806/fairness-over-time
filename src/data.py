@@ -15,6 +15,7 @@ LABEL_DRIFT_PATH = RESULTS_DIR / "label_drift.csv"
 DRIFT_PATH       = RESULTS_DIR / "drift_over_time.csv"
 SHAP_PATH        = RESULTS_DIR / "shap_over_time.csv"
 BACKGROUND_PATH  = ARTIFACTS_DIR / "background_sample.csv"
+FIX_PATH         = RESULTS_DIR / "fix_comparison.csv"
 
 #race/ethnicity function
 def make_race_eth(df):
