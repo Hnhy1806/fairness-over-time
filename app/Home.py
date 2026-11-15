@@ -35,11 +35,11 @@ with c2:
         st.page_link("pages/3_Why_It_Changed.py", label="Why It Changed", icon="🔍")
 with c3:
     with st.container(border=True):
-        # TODO(4g): replace with the one-sentence RQ3 answer.
         st.markdown(
             "**RQ3 · Which fix keeps it fair most cheaply?**\n\n"
-            "Six maintenance strategies compared on 2017, from doing nothing to retraining with a "
-            "fairness constraint. *Conclusion coming soon.*"
+            "**Group-specific cutoffs.** Refitting one cutoff per group on 2016 halves the 2014 mitigated "
+            "models' fairness gap in seconds, for both models, at about 2 points of accuracy. Retraining "
+            "alone only undoes the drift; retraining with the fairness constraint can match it but costs minutes."
         )
         st.page_link("pages/4_Fix_Comparison.py", label="Fix Comparison", icon="🛠️")
 

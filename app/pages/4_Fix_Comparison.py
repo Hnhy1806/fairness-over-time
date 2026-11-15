@@ -126,8 +126,16 @@ st.markdown(
 )
 
 # TODO(4g): replace this placeholder with the RQ3 answer (one sentence + 2–3 supporting points).
-st.info("**Conclusion:** coming soon (written together with the RQ3 answer in notebook 04).", icon="📝")
-
+st.info(
+    "**Conclusion: group-specific cutoffs (S2) are the cheapest reliable fairness fix.** "
+    "EOD about 0.11 vs. 0.18–0.21 for the 2014 mitigated models, fitted in about 2 seconds, "
+    "the same for both models, at about 2.4 points of accuracy.\n\n"
+    "- **S1 and S3 only undo the drift:** fairness returns to the 2014 level, no better.\n"
+    "- **S4 matches S2 for XGBoost** (with 1.5 points more accuracy) but takes minutes and "
+    "didn't hold for LR.\n"
+    "- **Where group-specific, randomized cutoffs aren't allowed,** S4 on XGBoost is the better choice.",
+    icon="📝",
+)
 with st.expander("The six strategies", expanded=False):
     st.dataframe(
         pd.DataFrame({"Strategy": STRATEGIES.values(), "What it does": DESCRIPTIONS.values()}),
