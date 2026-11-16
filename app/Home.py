@@ -8,7 +8,7 @@ st.set_page_config(page_title="Fairness Over Time", layout="wide")
 st.title("Fairness Over Time")
 st.markdown(
     "### Does a model that is fair when deployed stay fair as data changes over time?\n"
-    "Income models (does a person earn **more than $50K**?) are trained on **Texas** census data from "
+    "Income models (does a person earn **more than \\$50K**?) are trained on **Texas** census data from "
     "**2014**, made fair with a fairness constraint, then **frozen** and run on 2015–2017 without "
     "retraining. This app follows what happens to their fairness, why it changes, and how to fix it."
 )
@@ -29,7 +29,7 @@ with c2:
         st.markdown(
             "**RQ2 · Why does it change?**\n\n"
             "**Concept drift meets a fixed cutoff.** Inputs barely change, but more people with the same "
-            "features now earn over $50K (84% real income growth, 16% inflation). The 2014 cutoff misses "
+            "features now earn over \\$50K (84% real income growth, 16% inflation). The 2014 cutoff misses "
             "them unevenly across groups."
         )
         st.page_link("pages/3_Why_It_Changed.py", label="Why It Changed", icon="🔍")
@@ -82,9 +82,9 @@ with st.expander("Limitations"):
         "- One state and four years; results may differ elsewhere or over longer periods.\n"
         "- Sex and race/ethnicity are model inputs on purpose, to measure how much the models rely on them. "
         "This is a research model for studying fairness over time, not a deployed decision system.\n"
-        "- The smallest groups (NH Asian and NH Other, by sex) have few people earning > $50K, so their "
+        "- The smallest groups (NH Asian and NH Other, by sex) have few people earning > \\$50K, so their "
         "numbers are noisy.\n"
-        "- The label uses a fixed $50K line, so part of the change over time is inflation (measured on "
+        "- The label uses a fixed \\$50K line, so part of the change over time is inflation (measured on "
         "Why It Changed)."
     )
 

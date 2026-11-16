@@ -171,7 +171,7 @@ st.title("Why It Changed")
 st.markdown(
     "**Answer: concept drift meets a fixed cutoff.** The people the models see barely change, and the "
     "models use their features the same way every year. What changes is the outcome: more people with "
-    "the same features now earn over $50K, mostly through real income growth. The 2014 cutoff misses "
+    "the same features now earn over \\$50K, mostly through real income growth. The 2014 cutoff misses "
     "many of these new high earners, and it misses them **unevenly** across groups, which widens the "
     "fairness gap."
 )
@@ -184,15 +184,15 @@ with c1:
 with c2:
     split = label_split()
     overall = split[split["attribute"] == "overall"].iloc[0]
-    st.metric(f"Share earning > $50K, {LAST_YEAR}", f"{overall[f'{LAST_YEAR} share']:.1f}%",
+    st.metric(f"Share earning > \\$50K, {LAST_YEAR}", f"{overall[f'{LAST_YEAR} share']:.1f}%",
               f"{overall['Total rise']:+.1f} points since {FIRST_YEAR}", delta_color="off")
     st.markdown(
         f"Of that rise, **{100 - overall['Inflation share']:.0f}% is real income growth** and only "
-        f"**{overall['Inflation share']:.0f}% is inflation** (the fixed $50K line losing value). "
+        f"**{overall['Inflation share']:.0f}% is inflation** (the fixed \\$50K line losing value). "
         "So the 2014 models go out of date mainly because the population really changed."
     )
 st.caption(
-    "Red: the label the models were trained on (income > $50K). Blue: the same line adjusted for "
+    "Red: the label the models were trained on (income > \\$50K). Blue: the same line adjusted for "
     "inflation (CPI-U, 2014 dollars). The gap between them is the part caused by inflation alone."
 )
 with st.expander("By group (percentage points)"):
@@ -260,7 +260,7 @@ st.markdown(
 st.caption(
     f"Gray: {FIRST_YEAR} (test set). Red: {LAST_YEAR} (all people). Sorted by change, largest fall on top. "
     f"In {LAST_YEAR}, {choice}'s lowest TPR is {lo.rstrip(' *')} and its highest is {hi.rstrip(' *')}. "
-    "* Small groups (about 40–60 people earning > $50K in the 2014 test set): ignore changes below ~0.05."
+    "* Small groups (about 40–60 people earning > \\$50K in the 2014 test set): ignore changes below ~0.05."
 )
 
 st.divider()
@@ -273,7 +273,7 @@ st.markdown(
 with st.expander("Caveats"):
     st.markdown(
         "- **Inflation share is likely a lower bound:** reported incomes cluster on round numbers, and "
-        "many people report exactly $50,000, which counts as ≤ $50K under both lines.\n"
+        "many people report exactly \\$50,000, which counts as ≤ \\$50K under both lines.\n"
         "- **Noise floor for sex and race/ethnicity is zero by design:** the 2014 split was stratified on "
         "them, so judge their PSI by the raw value.\n"
         "- **The 2014 noise floor uses ~25,000 test rows vs. ~130,000 rows in later years,** so it slightly "

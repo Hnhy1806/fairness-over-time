@@ -140,7 +140,7 @@ def select(label, feature, **kwargs):
 st.title("Try a Profile")
 st.markdown(
     "Describe one person and see what the **four frozen 2014 models** predict: "
-    "does this person earn **more than $50K** a year? The models were trained on Texas 2014 data "
+    "does this person earn **more than \\$50K** a year? The models were trained on Texas 2014 data "
     "and never retrained. The form starts with the most common values in the 2014 data."
 )
 
@@ -184,8 +184,8 @@ for col, (_, r) in zip(st.columns(4), pred.iterrows()):
         delta_color="off",
     )
 st.caption(
-    f"Decision = score ≥ {THRESHOLD}. Unmitigated score = predicted probability of earning > $50K. "
-    "Mitigated score = share of the fairness-constrained ensemble voting '> $50K' (not a calibrated probability)."
+    f"Decision = score ≥ {THRESHOLD}. Unmitigated score = predicted probability of earning > \\$50K. "
+    "Mitigated score = share of the fairness-constrained ensemble voting '> \\$50K' (not a calibrated probability)."
 )
 
 # ---------------------------------------------------------------- page: SHAP
@@ -197,7 +197,7 @@ st.altair_chart(shap_chart(shap_df))
 st.caption(
     "Each bar shows how much one feature moved this person's score compared with an average person "
     "from a 2014 reference sample (log-odds; exact for LR, TreeSHAP for XGBoost). "
-    "The starting point is that average person's score, and about two-thirds of people earn ≤ $50K, "
+    "The starting point is that average person's score, and about two-thirds of people earn ≤ \\$50K, "
     "so a person with mostly green bars can still end up below the cutoff. "
     "Shown for the unmitigated models only: the mitigated models are weighted votes of many inner "
     "models, which SHAP does not explain cleanly. Compare features within one model; the two models "

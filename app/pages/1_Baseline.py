@@ -121,7 +121,7 @@ st.markdown(
 with st.expander("Setup: data, models and mitigation"):
     st.markdown(
         "- **Data:** Folktables ACSIncome, Texas, 2014 ACS 1-year person file: 127,039 working adults. "
-        "Label: personal income > $50,000 (31.6% of people).\n"
+        "Label: personal income > \\$50,000 (31.6% of people).\n"
         "- **Features (10):** age, class of worker, education, marital status, occupation, place of birth, "
         "household role, hours worked, sex, race/ethnicity. Race/ethnicity combines race and Hispanic "
         "origin into 5 groups (Hispanic of any race; non-Hispanic White, Black, Asian, Other).\n"
@@ -154,7 +154,7 @@ for col, model in zip((c1, c2), ("LR", "XGBoost")):
     )
 st.caption(
     "EOD = largest gap between groups in true- or false-positive rate; DPD = largest gap in the share "
-    "predicted > $50K (lower = fairer for both). Mitigated AUC comes from a vote share and is not "
+    "predicted > \\$50K (lower = fairer for both). Mitigated AUC comes from a vote share and is not "
     "comparable. The mitigated models' EOD intervals are wide and lopsided: EOD is a maximum over many "
     "noisy group gaps, so resampling pushes it upward. Read the intervals by width and overlap."
 )
@@ -166,7 +166,7 @@ st.altair_chart(tpr_chart(model, attribute))
 st.caption(
     "Unmitigated (blue) vs. mitigated (orange) true-positive rate per group in 2014. Mitigation raises "
     "the groups the model missed most and lowers the top groups, pulling them together. "
-    "* Small groups (about 40–60 people earning > $50K in the test set): noisy."
+    "* Small groups (about 40–60 people earning > \\$50K in the test set): noisy."
 )
 
 # ---------------------------------------------------------------- accuracy hides unfairness
@@ -181,8 +181,8 @@ with c2:
     st.markdown(
         f"For unmitigated {model}, **Hispanic workers have one of the highest accuracies "
         f"({accuracy['Hispanic']:.0%}) but the lowest true-positive rate ({tpr['Hispanic']:.0%})**: "
-        f"the model misses {1 - tpr['Hispanic']:.0%} of Hispanic Texans who earn over $50K. "
-        "In a group where few people earn over $50K, predicting \"no\" is usually right, so accuracy "
+        f"the model misses {1 - tpr['Hispanic']:.0%} of Hispanic Texans who earn over \\$50K. "
+        "In a group where few people earn over \\$50K, predicting \"no\" is usually right, so accuracy "
         "stays high while the people who do earn more are missed. That is why this project measures "
         "fairness with error-rate gaps, not accuracy."
     )
@@ -197,7 +197,7 @@ with c2:
     true_gap = (gap.loc["Male", "True share > $50K"] - gap.loc["Female", "True share > $50K"]) * 100
     pred_gap = (gap.loc["Male", "Predicted share > $50K"] - gap.loc["Female", "Predicted share > $50K"]) * 100
     st.markdown(
-        f"In the data, men are {true_gap:.1f} points more likely than women to earn over $50K. "
+        f"In the data, men are {true_gap:.1f} points more likely than women to earn over \\$50K. "
         f"Unmitigated {model} predicts a gap of **{pred_gap:.1f} points**: it exaggerates a real "
         "difference rather than just reflecting it."
     )

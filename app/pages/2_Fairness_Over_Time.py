@@ -177,7 +177,7 @@ st.markdown(
     "Every model loses about 1.2 points of accuracy by 2017, while AUC falls far less "
     "(0.3–0.5 points for the unmitigated models). "
     "The models still **rank** people correctly, but the 2014 decision cutoff is out of date: "
-    "more people with the same features now earn over $50K. "
+    "more people with the same features now earn over \\$50K. "
     "See **Why It Changed** for the diagnosis."
 )
 st.caption(
@@ -189,10 +189,10 @@ st.caption(
 with st.expander("How to read these metrics"):
     st.markdown(
         "- **EOD (equalized odds difference):** the largest gap between groups in "
-        "true-positive rate (people earning > $50K who are correctly flagged) or "
+        "true-positive rate (people earning > \\$50K who are correctly flagged) or "
         "false-positive rate. It is the main metric because the mitigation targeted it.\n"
         "- **DPD (demographic parity difference):** the largest gap between groups in the "
-        "share predicted > $50K. It also moves when the real share of high earners changes "
+        "share predicted > \\$50K. It also moves when the real share of high earners changes "
         "in a group, so a rising DPD is not automatically a model failure.\n"
         "- **Race/ethnicity × sex** compares the 10 intersectional groups "
         "(e.g. Hispanic × Female); it is the headline view."
