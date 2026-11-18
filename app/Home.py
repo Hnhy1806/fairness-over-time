@@ -1,7 +1,4 @@
-import pandas as pd
 import streamlit as st
-
-from utils import RESULT_FILES, get_models, load_background, load_results
 
 st.set_page_config(page_title="Fairness Over Time", layout="wide")
 
@@ -9,7 +6,7 @@ st.title("Fairness Over Time")
 st.markdown(
     "### Does a model that is fair when deployed stay fair as data changes over time?\n"
     "Income models (does a person earn **more than \\$50K**?) are trained on **Texas** census data from "
-    "**2014**, made fair with a fairness constraint, then **frozen** and run on 2015–2017 without "
+    "**2014**, made fairer with a fairness constraint, then **frozen** and run on 2015–2017 without "
     "retraining. This app follows what happens to their fairness, why it changes, and how to fix it."
 )
 
@@ -38,7 +35,7 @@ with c3:
         st.markdown(
             "**RQ3 · Which fix keeps it fair most cheaply?**\n\n"
             "**Group-specific cutoffs.** Refitting one cutoff per group on 2016 halves the 2014 mitigated "
-            "models' fairness gap in seconds, for both models, at about 2 points of accuracy. Retraining "
+            "models' fairness gap in seconds, for both models, at about 2.4 points of accuracy. Retraining "
             "alone only undoes the drift; retraining with the fairness constraint can match it but costs minutes."
         )
         st.page_link("pages/4_Fix_Comparison.py", label="Fix Comparison", icon="🛠️")
@@ -57,7 +54,7 @@ c1, c2 = st.columns(2)
 with c1:
     st.page_link("pages/1_Baseline.py", label="Start with the Baseline", icon="▶️")
 with c2:
-    st.page_link("pages/5_Try_A_Profile.py", label="Or try a profile", icon="🧑")
+    st.page_link("pages/5_Try_a_Profile.py", label="Or try a profile", icon="🧑")
 # ---------------------------------------------------------------- data and method
 with st.expander("Data and method"):
     st.markdown(
@@ -88,9 +85,3 @@ with st.expander("Limitations"):
         "Why It Changed)."
     )
 
-# Temporary smoke test (remove at A7)
-with st.expander("Artifact check (temporary)"):
-    rows = [{"file": name, "rows": len(load_results(path))} for name, path in RESULT_FILES.items()]
-    rows.append({"file": "background_sample.csv", "rows": len(load_background())})
-    st.dataframe(pd.DataFrame(rows), hide_index=True)
-    st.write("Models loaded:", list(get_models()))

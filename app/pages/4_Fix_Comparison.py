@@ -73,7 +73,7 @@ def tradeoff_chart(df):
     x_scale = alt.Scale(domain=[0, max(0.65, float(df["EOD"].max()) * 1.05)])
     y = alt.Y("accuracy:Q", title="Accuracy in 2017", scale=alt.Scale(zero=False))
     color = alt.Color("strategy_name:N", title="Strategy", scale=STRATEGY_COLORS,
-                      sort=list(STRATEGIES.values()), legend=alt.Legend(symbolOpacity=1))
+                      sort=list(STRATEGIES.values()), legend=alt.Legend(symbolOpacity=1, labelLimit=320))
     df = df.assign(eod_low=df["EOD"] - NOISE_EOD / 2, eod_high=df["EOD"] + NOISE_EOD / 2)
 
     # EOD noise band around each point (±0.02): overlapping bars = tied on fairness
@@ -109,7 +109,7 @@ def tpr_chart(model, strategies, attribute):
                     axis=alt.Axis(values=[i / 10 for i in range(11)], format=".1f")),
             y=alt.Y("label:N", title=None, sort=order, axis=alt.Axis(labelLimit=220)),
             color=alt.Color("strategy_name:N", title="Strategy", scale=STRATEGY_COLORS,
-                            sort=list(STRATEGIES.values()), legend=alt.Legend(orient="top", symbolOpacity=1)),
+                            sort=list(STRATEGIES.values()), legend=alt.Legend(orient="top", symbolOpacity=1, labelLimit=320)),
             tooltip=[alt.Tooltip("label:N", title="Group"), alt.Tooltip("strategy_name:N", title="Strategy"),
                      alt.Tooltip("value:Q", title="TPR", format=".3f")],
         )
