@@ -141,7 +141,7 @@ st.title("Try a Profile")
 st.markdown(
     "Describe one person and see what the **four frozen 2014 models** predict: "
     "does this person earn **more than \\$50K** a year? The models were trained on Texas 2014 data "
-    "and never retrained. The form starts with the most common values in the 2014 data."
+    "and never retrained. The form starts with typical values from the 2014 data (median age and hours, most common category otherwise)."
 )
 
 with st.form("profile"):
